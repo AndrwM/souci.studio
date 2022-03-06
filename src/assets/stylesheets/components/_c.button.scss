@@ -1,7 +1,6 @@
 .c-button {
   border: 1px solid transparent;
   border-radius: 2rem 2.80rem;
-  color: $c-primary;
   display: inline-block;
   font: 400 16px / 1.4 $ff-primary;
   padding: 10px 0;
@@ -9,6 +8,7 @@
   transition: all 0.4s ease-out;
   cursor: pointer;
 
+  @include var(color, c-primary);
   @media #{$bp-lap} {
     font: 400 18px / 1.4 $ff-primary;
   }
@@ -35,19 +35,20 @@
       }
     }
 
-    border-color: rgba($c-primary, 0.2);
-    color: $c-primary;
     padding-left: 24px;
     padding-right: 24px;
     transition: none;
     margin-left: -24px;
     background: #ffffff;
     animation: 4.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) bobble infinite;
+
+    @include var(border-color, c-primary, 0.2);
+    @include var(color, c-primary);
   }
 
   &:active {
-    background: rgba($c-primary, 0.04);
-    color: darken($c-primary, 10%);
+    @include var(background, c-primary, 0.04);
+    @include var(color, c-primary);
   }
 
   &--arrow-remote,

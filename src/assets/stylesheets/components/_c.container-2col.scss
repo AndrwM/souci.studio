@@ -23,7 +23,8 @@
       }
 
       &:nth-child(2) {
-        border-left: 1px solid $c-border;
+        border-left: 1px solid;
+        @include var(border-color, c-border);
         padding: 14vh 0px 0px 6vw
       }
 

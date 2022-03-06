@@ -1,9 +1,10 @@
 .c-paragraph {
-  color: #434551;
   font: 400 20px / 1.65 $ff-secondary;
   margin: 0 0 25px;
   max-width: 680px;
   padding: 0;
+
+  @include var(color, c-grey-dark);
 
   @media #{$bp-hand} { font: 400 18px / 1.65 $ff-secondary; }
   @media #{$bp-lap} { font: 400 24px / 1.65 $ff-secondary; }
@@ -75,24 +76,22 @@
   }
 
   &--large {
-    color: #2c2d35;
     font: 400 28px / 1.4 $ff-display;
     max-width: 980px;
     margin: 0 0 45px;
 
-    @media #{$bp-lap} {
-      font: 400 34px / 1.4 $ff-display;
-    }
-    @media #{$bp-desk} {
-      font: 400 44px / 1.4 $ff-display;
-    }
+    @include var(color, c-grey-dark);
+
+    @media #{$bp-lap} { font: 400 34px / 1.4 $ff-display; }
+    @media #{$bp-desk} { font: 400 44px / 1.4 $ff-display; }
   }
 
   &--xlarge {
-    color: #2c2d35;
     font: 400 30px / 1.25 $ff-display;
     max-width: none;
     margin: 0 0 52px;
+
+    @include var(color, c-grey-dark);
 
     @media #{$bp-hand} { font: 400 44px / 1.25 $ff-display; }
     @media #{$bp-lap} { font: 400 60px / 1.25 $ff-display; }

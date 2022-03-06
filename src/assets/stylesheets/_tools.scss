@@ -24,6 +24,17 @@
   }
 }
 
+// ------- Css Variable Fallback
+@mixin var($property, $var, $alpha: null, $fallback: $colors-light) {
+  @if ($alpha) {
+    #{$property}: rgba(map-get($fallback, $var), $alpha);
+    #{$property}: rgba(var(--#{$var}), $alpha);
+  } @else {
+    #{$property}: map-get($fallback, $var);
+    #{$property}: var(--#{$var});
+  }
+}
+
 //-------- Basic Media Query
 @mixin media($point) {
   @media #{$point} {

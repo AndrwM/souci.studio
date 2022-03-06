@@ -90,7 +90,7 @@
     width: 100%;
     box-sizing: border-box;
     position: relative;
-    color: rgba($c-grey-medium, 0.2);
+    @include var(color, c-grey-medium);
     z-index: $z-4;
     align-items: baseline;
     margin: auto;
@@ -99,7 +99,7 @@
 
   .c-navigation__breadcrumb-link {
     font: 400 16px / 2 $ff-primary;
-    color: $c-grey-medium;
+    @include var(color, c-grey-medium);
     cursor: w-resize;
     position: relative;
     text-decoration: none;
@@ -108,7 +108,7 @@
     display: inline-block;
 
     &::after {
-      background: $c-grey-medium;
+      @include var(color, c-grey-medium);
       bottom: 0;
       content: '';
       height: 1px;

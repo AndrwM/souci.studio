@@ -29,30 +29,60 @@ $s-large: 54px;
 $s-xlarge: 72px;
 
 //----------------- Colors
-$c-tertiary-dark: #69615d;
-$c-tertiary-light: #fff9f6;
-$c-tertiary: #e1c6bc;
-$c-dark: #3f3c46;
-$c-black: red;
 
-$c-light-blue: #f1f9fc;
-// $c-light-blue: #eefffc;
-$c-secondary: #27c9ff;
-$c-primary: #6a5ef5;
+$colors-light: (
+  c-tertiary-dark: #69615d,
+  c-tertiary-light: #fff9f6,
+  c-tertiary: #e1c6bc,
+  c-dark: #3f3c46,
+  c-black: red,
 
-// Yellows
-$c-yellow: #FFCD01;
-$c-yellow-dark: #866D06;
+  c-light-blue: #f1f9fc,
+  // c-light-blue: #eefffc,
+  c-secondary: #27c9ff,
+  c-primary: #6a5ef5,
 
-// Neutrals
-$c-grey-extradark: #22242C; // #3B3E33
-$c-grey-dark: #252A2D; // #3B3E33
-$c-grey-medium: #343f48; // #4d4f5d
-$c-grey-light: #939499;
-$c-grey-extralight: #f8fdff;
+  // Yellows
+  c-yellow: #FFCD01,
+  c-yellow-dark: #866D06,
 
-$c-system: #171717;
-$c-border: #F4F4F4;
+  // Neutrals
+  c-grey-extradark: #22242C, // #3B3E33
+  c-grey-dark: #252A2D, // #3B3E33
+  c-grey-medium: #343f48, // #4d4f5d
+  c-grey-light: #939499,
+  c-grey-extralight: #f8fdff,
+
+  c-system: #171717,
+  c-border: #F4F4F4,
+);
+
+$colors-dark: (
+  c-tertiary-dark: #83340d,
+  c-tertiary-light: #fff9f6,
+  c-tertiary: #e1c6bc,
+  c-dark: #3f3c46,
+  c-black: red,
+
+  c-light-blue: #f1f9fc,
+  // c-light-blue: #eefffc,
+  c-secondary: #27c9ff,
+  c-primary: #6a5ef5,
+
+  // Yellows
+  c-yellow: #FFCD01,
+  c-yellow-dark: #866D06,
+
+  // Neutrals
+  c-grey-extradark: #22242C, // #3B3E33
+  c-grey-dark: #2b85bd, // #3B3E33
+  c-grey-medium: #343f48, // #4d4f5d
+  c-grey-light: #939499,
+  c-grey-extralight: #f8fdff,
+
+  c-system: #171717,
+  c-border: #F4F4F4,
+);
 
 //----------------- Type Mixins
 $ff-primary: "Graphik", sans-serif;
