@@ -1,0 +1,18 @@
+.c-citation {
+  @include clearfix;
+
+  &--photo {
+    border-radius: 5px;
+    float: left;
+    height: 34px;
+    margin: 10px 10px 0 0;
+    overflow: hidden;
+    width: 34px;
+  }
+
+  &--author {
+    color: #434551;
+    margin: 10px 0 0;
+    font: 400 12px / 34px $ff-primary;
+  }
+}

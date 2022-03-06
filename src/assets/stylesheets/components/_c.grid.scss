@@ -1,0 +1,186 @@
+/* ==========================================================================
+   #GRID –
+   Modified inuitcss flexbox grid: https://www.npmjs.com/package/inuitcss-flexbox
+   ========================================================================== */
+
+/**
+ *
+ * Cells are full-width and will stack on top of each other by default:
+ *
+ * <div class="c-grid">
+ *   <div class="c-grid__cell">
+ *   </div>
+ *   <div class="c-grid__cell">
+ *   </div>
+ * </div>
+ *
+ * Cells will in most cases be accompanied by utility classes that divide
+ * the grid into fractions. These are provided by inuitcss:
+ *
+ * <div class="c-grid">
+ *   <div class="c-grid__cell u-1/2">
+ *   </div>
+ *   <div class="c-grid__cell u-1/2">
+ *   </div>
+ * </div>
+ *
+ * Several modifier classes are provided. For example, `c-grid--auto` will
+ * divide the space equally between all containing cells without the need
+ * for width utility classes.
+ *
+ * <div class="c-grid--auto">
+ *   <div class="c-grid__cell">
+ *   </div>
+ *   <div class="c-grid__cell">
+ *   </div>
+ * </div>
+ */
+
+// Specify possible gutter widths.
+
+$inuit-flexgrid-spacing-sizes: (
+    null: $s-horizontal-padding,
+    '--regular': $s-regular,
+    '--tiny': $s-tiny,
+    '--small': $s-small,
+    '--large': $s-large,
+    '--flush': 0,
+) !default;
+
+// Specify possible alignment values
+
+$inuit-flexgrid-alignment-values: (
+    '--top': 'flex-start',
+    '--middle': 'center',
+    '--bottom': 'flex-end',
+    '--baseline': 'baseline',
+    '--stretch': 'stretch',
+) !default;
+
+// Specify possible justify values
+
+$inuit-flexgrid-justify-values: (
+    '--left': 'flex-start',
+    '--center': 'center',
+    '--right': 'flex-end',
+    '--between': 'space-between',
+    '--around': 'space-around',
+) !default;
+
+/* The grid
+   ========================================================================== */
+
+.c-grid {
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+/**
+ * 1. Cells are full-width and stack on top of each other by default.
+ */
+
+.c-grid__cell {
+    flex: 0 1 auto;
+    box-sizing: border-box;
+    width: 100%; /* [1] */
+}
+
+
+/* Gutters
+   ========================================================================== */
+
+/**
+ * 1. The map $inuit-flexgrid-spacing-sizes contains a `null` key which
+ *    will be our default gutter size.
+ * 2. Add a negative margin on one side only. That way we aren't required to use
+ *    a wrapper with the same amount of spacing, though it's common to do so.
+ * 3. Neutralize the left margin on `c-grid`.
+ */
+
+@each $size-namespace, $size in $inuit-flexgrid-spacing-sizes {
+    .c-grid#{$size-namespace} { /* [1] */
+        margin-left: -$size; /* [2] */
+        & > .c-grid__cell {
+            padding-left: $size; /* [3] */
+        }
+    }
+}
+
+
+/* Automatically size cells by distributing them equally
+   ========================================================================== */
+
+.c-grid--auto {
+    flex-wrap: nowrap;
+
+    & > .c-grid__cell {
+        flex: 0 0 auto;
+        width: auto;
+    }
+}
+
+.c-grid--stretch {
+    flex-wrap: nowrap;
+
+    & > .c-grid__cell {
+        flex: 1 0 auto;
+        width: auto;
+    }
+}
+
+
+/* Horizontal alignment
+   ========================================================================== */
+
+@each $namespace, $value in $inuit-flexgrid-justify-values {
+    .c-grid#{$namespace} {
+        justify-content: #{$value};
+    }
+}
+
+
+/* Pull behavior
+   ========================================================================== */
+
+.c-grid__cell--pull-left {
+    margin-right: auto;
+}
+
+.c-grid__cell--pull-right {
+    margin-left: auto;
+}
+
+
+/* Vertical alignment
+   ========================================================================== */
+
+@each $namespace, $value in $inuit-flexgrid-alignment-values {
+    .c-grid#{$namespace} {
+        align-items: #{$value};
+    }
+}
+
+@each $namespace, $value in $inuit-flexgrid-alignment-values {
+    .c-grid__cell#{$namespace} {
+        align-self: #{$value};
+    }
+}
+
+
+/* Content distribution
+   ========================================================================== */
+
+.c-grid--reverse {
+    flex-direction: row-reverse;
+}
+
+.c-grid--column {
+    flex-direction: column;
+}
+
+.c-grid--column-reverse {
+    flex-direction: column-reverse;
+}

@@ -1,0 +1,33 @@
+.c-loading {
+  @keyframes slide-in {
+    0% {
+      width: 0;
+      // opacity: 0;
+    }
+    10% {
+      width: 40%;
+      // opacity: 1;
+    }
+    100% {
+      width: 80%;
+      // opacity: 1;
+    }
+  }
+
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  position: fixed;
+  height: 4px;
+  background: red;
+  animation: 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) slide-in;
+  transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &--complete {
+    width: 100% !important;
+    animation: none !important;
+    // transform: translateY(-100%);
+  }
+}

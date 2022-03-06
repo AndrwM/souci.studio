@@ -1,0 +1,89 @@
+.c-header {
+  $min-height: 12vh;
+
+  margin: 0;
+  position: relative;
+
+
+  &__background {
+    @keyframes float {
+      0% {
+        transform: scaleY(1);
+      }
+      50% {
+        transform: scaleY(0.96);
+      }
+      75% {
+        transform: scaleY(1.03);
+      }
+      100% {
+        transform: scaleY(1);
+      }
+    }
+
+    @keyframes float-mask {
+      0% {
+        background-position: 0vw bottom;
+      }
+      100% {
+        background-position: 200vw bottom;
+      }
+    }
+
+    content: "";
+    transform-origin: top;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: $c-light-blue linear-gradient(to bottom, rgba(#ffffff, 1) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(#4c24ff, 0.1) 100%);
+    transition: 0.5s cubic-bezier(0.35, 0.46, 0.45, 1);
+    transition-property: transform, background-color, height;
+    animation: 8s cubic-bezier(0.25, 0.46, 0.45, 0.94) float infinite;
+    min-height: $min-height;
+    will-change: transform, background-color, height;
+
+    &::after {
+      // background-image: url("../../images/c-wrapper-mask.svg"); -- v4 removed
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-repeat: repeat-x;
+      background-position: 0% bottom;
+      height: 25px;
+      bottom: -1px;
+      background-size: 200vw;
+      animation: 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) float-mask infinite;
+      will-change: background-position;
+    }
+  }
+
+  &__content {
+    z-index: +1;
+    position: relative;
+    box-sizing: border-box;
+    padding: $s-small 6vw 2vh;
+
+    @media #{$bp-desk} { padding: 2vh 8vw 120px; }
+
+    &:empty {
+      padding: 0;
+      min-height: $min-height;
+    }
+
+    & > * {
+      @keyframes fade-in {
+        0% {
+          transform: translateY(5px);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(0);
+        }
+      }
+
+      animation: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) fade-in;
+    }
+  }
+}

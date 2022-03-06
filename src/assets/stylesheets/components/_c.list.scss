@@ -1,0 +1,100 @@
+.c-list {
+  list-style: none inside;
+  margin: 0 0 20px;
+  padding: 0;
+
+  .c-list__item {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 2px 0 10px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '-';
+      margin: 0 10px 0 -15px;
+    }
+
+    @media #{$bp-desk} {
+      font-size: 14px;
+      margin: 0 0 5px;
+      line-height: 1.8;
+
+      &::before {
+        margin: 0 8px 0 0;
+      }
+    }
+
+    > .c-list {
+      margin: 4px 0 4px 34px;
+    }
+  }
+
+  &--large > .c-list__item {
+    font-size: 14px;
+    @media #{$bp-desk} { font-size: 16px; }
+  }
+
+  &--horizontal {
+    @media #{$bp-desk} {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  @mixin emoji-bullet($name, $emoji) {
+    &--#{$name} .c-list__item::before,
+    .c-list__item--#{$name}::before {
+      content: $emoji;
+      margin: 2px 4px auto 2px;
+      vertical-align: middle;
+
+      @media #{$bp-desk} {
+        font-size: 135%;
+        margin: 2px 9px auto -33px;
+      }
+    }
+  }
+
+  @include emoji-bullet("mushroom",   "🍄");
+  @include emoji-bullet("wave",   "👋");
+  @include emoji-bullet("rocket",   "🚀");
+  @include emoji-bullet("sparkle",  "✨");
+  @include emoji-bullet("glove",    "🧤");
+  @include emoji-bullet("measure",  "📐");
+  @include emoji-bullet("remote",  "🔗");
+  @include emoji-bullet("cherry",  "🍒");
+  @include emoji-bullet("diamond",  "💎");
+  @include emoji-bullet("down",  "👇");
+  @include emoji-bullet("computer",  "👨‍💻");
+
+  @include emoji-bullet("exp-1",  "🔧");
+  @include emoji-bullet("exp-2",  "🔨");
+  @include emoji-bullet("exp-3",  "⚒️");
+  @include emoji-bullet("exp-4",  "⚙️");
+
+  // &--rocket .c-list__item::before,
+  // .c-list__item--rocket::before {
+  //   content: '🚀';
+  //   @include emoji-spacing;
+  // }
+
+  // &--sparkle .c-list__item::before,
+  // .c-list__item--sparkle::before {
+  //   content: '✨';
+  //   @include emoji-spacing;
+  // }
+
+  // &--glove .c-list__item::before,
+  // .c-list__item--glove::before {
+  //   content: '🧤';
+  //   @include emoji-spacing;
+  // }
+
+  // &--measure .c-list__item::before,
+  // .c-list__item--measure::before {
+  //   content: '📐';
+  //   @include emoji-spacing;
+  // }
+
+}

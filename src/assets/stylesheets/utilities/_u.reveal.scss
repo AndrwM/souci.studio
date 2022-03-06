@@ -1,0 +1,6 @@
+.u-reveal {
+  opacity: 0.1;
+  transition: opacity ease 0.8s;
+
+  &--active { opacity: 1; }
+}

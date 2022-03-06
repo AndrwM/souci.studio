@@ -1,0 +1,60 @@
+//----------------- Breakpoints & Thangz
+$w-hand: "501px";
+$w-lap: "901px";
+$w-desk: "1101px";
+
+$bp-touch: "(hover: none) and (pointer: coarse)";
+$bp-hand: "(min-width: #{$w-hand})";
+$bp-lap: "(min-width: #{$w-lap})";
+$bp-lap-to-desk: "(min-width: #{$w-lap}) and (max-width: #{$w-desk})";
+$bp-desk: "(min-width: #{$w-desk})";
+
+$border-radius: 5px;
+$font-size: 20px;
+$page-max-width: 1300px;
+
+//----------------- Z-Index
+$z-1: 10;
+$z-2: 20;
+$z-3: 30;
+$z-4: 40;
+
+//----------------- Spacing
+$s-horizontal-padding: 2.8vw;
+$s-xtiny: 6px;
+$s-tiny: 12px;
+$s-small: 24px;
+$s-regular: 36px;
+$s-large: 54px;
+$s-xlarge: 72px;
+
+//----------------- Colors
+$c-tertiary-dark: #69615d;
+$c-tertiary-light: #fff9f6;
+$c-tertiary: #e1c6bc;
+$c-dark: #3f3c46;
+$c-black: red;
+
+$c-light-blue: #f1f9fc;
+// $c-light-blue: #eefffc;
+$c-secondary: #27c9ff;
+$c-primary: #6a5ef5;
+
+// Yellows
+$c-yellow: #FFCD01;
+$c-yellow-dark: #866D06;
+
+// Neutrals
+$c-grey-extradark: #22242C; // #3B3E33
+$c-grey-dark: #252A2D; // #3B3E33
+$c-grey-medium: #343f48; // #4d4f5d
+$c-grey-light: #939499;
+$c-grey-extralight: #f8fdff;
+
+$c-system: #171717;
+$c-border: #F4F4F4;
+
+//----------------- Type Mixins
+$ff-primary: "Graphik", sans-serif;
+$ff-secondary: "Louize", Georgia, "Times New Roman", serif;
+$ff-display: "Louize Display", Georgia, "Times New Roman", serif;

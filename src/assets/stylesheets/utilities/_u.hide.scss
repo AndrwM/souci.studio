@@ -1,0 +1,7 @@
+.u-hide {
+  display: none;
+
+  &--hand {@media (max-width: $w-hand)  { display: none; }}
+  &--lap {@media (max-width: $w-lap) { display: none; }}
+  &--desk {@media (max-width: $w-desk) { display: none; }}
+}

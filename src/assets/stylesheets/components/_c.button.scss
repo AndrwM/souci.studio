@@ -1,0 +1,118 @@
+.c-button {
+  border: 1px solid transparent;
+  border-radius: 2rem 2.80rem;
+  color: $c-primary;
+  display: inline-block;
+  font: 400 16px / 1.4 $ff-primary;
+  padding: 10px 0;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+
+  @media #{$bp-lap} {
+    font: 400 18px / 1.4 $ff-primary;
+  }
+
+  &:focus,
+  &:active,
+  &:hover {
+    @keyframes bobble {
+      0% {
+        border-radius: 2rem 2.80rem;
+        transform: scaleY(1);
+      }
+      15% {
+        border-radius: 1.80rem 2rem;
+        transform: scaleY(1.15);
+      }
+      70% {
+        border-radius: 2.80rem 2rem 2rem;
+        transform: scaleY(0.95);
+      }
+      100% {
+        border-radius: 2rem 2.80rem;
+        transform: scaleY(1);
+      }
+    }
+
+    border-color: rgba($c-primary, 0.2);
+    color: $c-primary;
+    padding-left: 24px;
+    padding-right: 24px;
+    transition: none;
+    margin-left: -24px;
+    background: #ffffff;
+    animation: 4.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) bobble infinite;
+  }
+
+  &:active {
+    background: rgba($c-primary, 0.04);
+    color: darken($c-primary, 10%);
+  }
+
+  &--arrow-remote,
+  &--arrow-d,
+  &--arrow-r,
+  &--arrow-l {
+
+    &::before,
+    &::after {
+      opacity: 0.4;
+      transition: all 0.1s ease-in;
+    }
+
+    &:active::after,
+    &:hover::after,
+    &:active::before,
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+
+  &--arrow-d {
+    cursor: s-resize;
+    &::after { content: '  ↓'; }
+  }
+
+  &--arrow-r {
+    cursor: e-resize;
+    &::after { content: '  \21e2'; }
+  }
+
+  &--arrow-l {
+    cursor: w-resize;
+    &::before { content: '\21e0  '; }
+  }
+
+  &--arrow-remote {
+    cursor: ne-resize;
+    // &::after { content: ' \2934'; }
+  }
+
+  &--disabled,
+  [disabled] {
+    cursor: not-allowed;
+
+    &:focus,
+    &:active,
+    &:hover {
+      // color: darken($c-light-blue, 30%);
+    }
+  }
+
+  &--small {
+    font: 400 14px / 1.4 $ff-primary;
+
+    @media #{$bp-lap} {
+      font: 400 16px / 1.4 $ff-primary;
+    }
+  }
+
+  &--xlarge {
+    font: 400 18px / 1.4 $ff-primary;
+
+    @media #{$bp-lap} {
+      font: 400 22px / 2 $ff-primary;
+    }
+  }
+}

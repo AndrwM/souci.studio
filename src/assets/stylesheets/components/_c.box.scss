@@ -1,0 +1,12 @@
+.c-box {
+  @include clearfix;
+  background: #ffffff;
+  border-radius: $border-radius;
+  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.12);
+  margin: 0 0 20px;
+  padding: 35px;
+
+  @media #{$bp-lap} {
+    padding: 50px 60px;
+  }
+}
