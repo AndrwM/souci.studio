@@ -52,14 +52,8 @@
   }
 
   &--white { background: #ffffff; }
-  &--sepia {
-    @include var(background, c-grey-light);
-  }
-  // &--light-blue { background: $c-light-blue linear-gradient(to bottom, #f9fbf9 0%, $c-light-blue 100%); }
-  // &--light-purple { background: #faf6ff linear-gradient(to bottom, #fffeff 0%, #f3f4ff 100%); }
-  // &--light-purple { background: #faf6ff linear-gradient(to bottom, #fffeff 0%, #f2fdff 100%); }
-  // &--light-purple { background: #faf6ff linear-gradient(to bottom, #fffeff 0%, #f3fbfd 100%); }
-  // &--light { background: $c-tertiary-light; }
+  &--sepia { @include theme-var(background-color, c-background-primary); }
+  &--accent { @include theme-var(background-color, c-background-accent); }
 
   &--masked::after {
     // background: transparent url('/assets/images/c-wrapper-mask.svg') no-repeat center center 100% 100%; -- v4 removed

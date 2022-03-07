@@ -3,10 +3,10 @@ import ExperienceEngineering from "./partials/ExperienceEngineering";
 import Text from "../components/Text";
 
 const Intro = () => (<>
-  <div className="c-wrapper c-wrapper--sepia">
+  <div className="c-wrapper c-wrapper--sepia u-padding-bottom">
     <Text type="paragraph" modifier="xlarge">
       I’m a product designer &amp; web&nbsp;engineer<br/>specializing in design systems.
-      &nbsp;<span className="c-emoji c-emoji--large">👋</span>
+      <span className="c-emoji c-emoji--large u-animate-wave">👋</span>
     </Text>
     <Text type="paragraph">
     I have over 8 years of industry experience and most recently lead design &amp; frontend engineering on a product team. I have also been a remote-worker for over 4 years.
@@ -21,8 +21,8 @@ const Intro = () => (<>
       At the moment, I am based between the Atlanta and Mexico City while I focus my efforts towards studying Spanish.
     </Text>
   </div>
-  <div className="c-wrapper c-wrapper--flush">
-    <div className="c-grid c-grid--large u-padding-top u-padding-bottom-small u-margin-vertical">
+  <div className="c-wrapper c-wrapper--slim c-wrapper--accent">
+    <div className="c-grid c-grid--large">
       <div className="c-grid__cell u-1/2--desk">
         <Text type="title" modifier="small" className="u-margin-top-small">Design Experience</Text>
         <ExperienceDesign />

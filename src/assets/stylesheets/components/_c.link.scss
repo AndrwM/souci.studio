@@ -1,88 +1,86 @@
-// .c-link {
-//   $faded-color: rgba($c-tertiary, 0.4);
+.c-link {
+  // transition: all 0.1s ease-in-out;
+  @include theme-var(color, c-foreground-medium);
+  position: relative;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: bottom;
 
-//   // transition: all 0.1s ease-in-out;
-//   @include var(color, c-grey-medium);
-//   position: relative;
-//   text-decoration: none;
-//   transition: all 0.1s ease-in-out;
-//   white-space: nowrap;
-//   display: inline-block;
-//   vertical-align: bottom;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: $s-xtiny;
+  padding-right: $s-xtiny;
+  border-radius: $border-radius;
 
-//   text-overflow: ellipsis;
-//   white-space: nowrap;
-//   overflow: hidden;
-//   padding-left: $s-xtiny;
-//   padding-right: $s-xtiny;
-//   border-radius: $border-radius;
+  &::before {
+    bottom: -4px;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transition: all 0.1s ease-in-out;
+    width: 100%;
+    @include theme-var(background, c-primary, 0.04);
+  }
 
-//   &::before {
-//     background: $faded-color;
-//     bottom: -4px;
-//     content: '';
-//     height: 1px;
-//     left: 0;
-//     position: absolute;
-//     transition: all 0.1s ease-in-out;
-//     width: 100%;
-//   }
+  &[href]:hover {
+    @include theme-var(background, c-primary);
+    @include theme-var(color, c-grey-extralight);
 
-//   &[href]:hover {
-//     background: $c-primary;
-//     color: $c-grey-extralight;
+    &::before {
+      @include theme-var(background, c-primary, 0.5);
+      transform: translateY(-3px);
+    }
+  }
 
-//     &::before {
-//       background: rgba($c-primary, 0.5);
-//       transform: translateY(-3px);
-//     }
-//   }
+  &--arrow-remote {
+    cursor: ne-resize;
+  }
 
-//   &--arrow-remote {
-//     cursor: ne-resize;
-//   }
+  &--arrow-r {
+    cursor: e-resize;
+  }
 
-//   &--arrow-r {
-//     cursor: e-resize;
-//   }
+  &--arrow-d {
+    cursor: s-resize;
+  }
 
-//   &--arrow-d {
-//     cursor: s-resize;
-//   }
+  &--arrow-d {
+    cursor: s-resize;
+  }
 
-//   &--arrow-d {
-//     cursor: s-resize;
-//   }
+  &--active {
+    text-decoration: line-through;
+    pointer-events: none;
+    cursor: not-allowed;
 
-//   &--active {
-//     text-decoration: line-through;
-//     pointer-events: none;
-//     cursor: not-allowed;
+    &::before { background: transparent; }
+  }
 
-//     &::before { background: transparent; }
-//   }
+  &--focal {
+    font-size: 16px;
 
-//   &--focal {
-//     font-size: 16px;
+    &::after {
+      content: ' \2192';
+      margin: 0 0 0 2px;
+      transition: all 0.1s ease-in-out;
+      @include theme-var(background, c-primary, 0.04);
+    }
 
-//     &::after {
-//       color: $faded-color;
-//       content: ' \2192';
-//       margin: 0 0 0 2px;
-//       transition: all 0.1s ease-in-out;
-//     }
+    &[href]:hover::after {
+      @include theme-var(background, c-primary);
+      margin: 0 0 0 6px;
+    }
+  }
 
-//     &[href]:hover::after {
-//       color: $c-primary;
-//       margin: 0 0 0 6px;
-//     }
-//   }
+  &--on-dark {
+    color: c-grey-extralight;
 
-//   &--on-dark {
-//     color: $c-grey-extralight;
-
-//     &.c-link--active {
-//       background: rgba(#ffffff, 0.2);
-//     }
-//   }
-// }
+    &.c-link--active {
+      background: rgba(#ffffff, 0.2);
+    }
+  }
+}

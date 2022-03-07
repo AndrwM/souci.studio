@@ -2,6 +2,7 @@
   font-size: 24px;
   vertical-align: middle;
   line-height: initial;
+  display: inline-block;
 
   @media #{$bp-desk} {
     &--in-margin {
@@ -11,6 +12,7 @@
   }
 
   &--large {
-    font-size: 42px;
+    font-size: 46px;
+    margin: 0 14px;
   }
 }

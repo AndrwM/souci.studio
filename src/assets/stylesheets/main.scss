@@ -1,6 +1,6 @@
+@import "tools";
 @import "variables";
 @import "font-face";
-@import "tools";
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -41,8 +41,8 @@ body {
   margin: 0;
   font-smoothing: subpixel-antialiased;
 
-  @include var(color, c-grey-medium);
-  @include var(background, c-grey-dark);
+  @include theme-var(color, c-foreground-medium);
+  @include theme-var(background, c-background-primary);
 }
 
 img {
@@ -52,8 +52,8 @@ img {
 }
 
 ::selection {
-  @include var(background, c-primary, 0.7);
-  @include var(color, c-primary);
+  @include theme-var(background, c-primary, 0.7);
+  @include theme-var(color, c-primary);
 }
 
 [js-breakpoint] {
@@ -77,11 +77,11 @@ img {
 @import "components/c.paragraph";
 @import "components/c.title";
 @import "components/c.wrapper";
-@import "components/c.navigation";
 @import "components/c.box";
 @import "components/c.citation";
 @import "components/c.carousel";
 @import "components/c.grid";
+@import "components/c.toggle";
 @import "components/c.loading";
 
 //---------------------- Utilities

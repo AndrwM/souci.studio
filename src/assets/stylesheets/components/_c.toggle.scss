@@ -1,0 +1,55 @@
+$-border: 4px;
+$-knob-size: 18px;
+$-toggle-width: 80px;
+$-radius: 20px;
+
+.c-toggle {
+  border: 1px solid;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border: 2px solid;
+  border-radius: $-radius;
+  height: 24px + $-border;
+  width: $-toggle-width;
+  padding-left: 0;
+  padding-right: $-knob-size;
+  font: 400 14px / 1 $ff-primary;
+  @include theme-var(background-color, c-background-accent);
+  @include theme-var(color, c-foreground-medium);
+  @include theme-var(border-color, c-background-primary);
+
+
+  &:hover {
+    @include theme-var(border-color, c-primary-200);
+  }
+
+  &:focus,
+  &:active {
+    @include theme-var(border-color, c-primary);
+  }
+
+  &::after {
+    content: "";
+    transition: right 0.2s ease, padding 0.2s ease;
+    border-radius: 50%;
+    height: $-knob-size;
+    width: $-knob-size;
+    position: absolute;
+    right: $-border;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    @include theme-var(background-color, c-foreground-medium);
+  }
+}
+
+.c-toggle--active {
+  padding-right: 0;
+  padding-left: $-knob-size;
+
+  &::after {
+    right: calc(100% - #{$-knob-size} - #{$-border});
+  }
+}

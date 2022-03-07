@@ -1,3 +1,20 @@
+//-------- Hex -> RGB Converter
+@function hex-to-rgb($color) {
+  @return rgb(red($color), green($color), blue($color));
+}
+
+@function convertStringToColor($colors) {
+  $string: str-replace($colors, " ", "");
+  $list: str-split($string, ',');
+  $red: nth($list, 1);
+  $green: nth($list, 2);
+  $blue: nth($list, 3);
+
+  $rgb: rgb(number($red), number($green), number($blue));
+
+  @return $rgb;
+}
+
 //-------- Clearfix
 @mixin clearfix {
   // http://nicolasgallagher.com/micro-clearfix-hack/
@@ -25,14 +42,9 @@
 }
 
 // ------- Css Variable Fallback
-@mixin var($property, $var, $alpha: null, $fallback: $colors-light) {
-  @if ($alpha) {
-    #{$property}: rgba(map-get($fallback, $var), $alpha);
-    #{$property}: rgba(var(--#{$var}), $alpha);
-  } @else {
-    #{$property}: map-get($fallback, $var);
-    #{$property}: var(--#{$var});
-  }
+@mixin theme-var($property, $var, $alpha: null, $fallback-theme: $colors-light) {
+  #{$property}: map-get($fallback-theme, $var);
+  #{$property}: var(--#{$var});
 }
 
 //-------- Basic Media Query
