@@ -47,6 +47,7 @@
   }
 
   &--medium {
+    @include theme-var(color, c-foreground-focal);
     font: 400 24px / 1.4 $ff-display;
     margin: 0 0 $s-small;
 
@@ -60,6 +61,7 @@
   }
 
   &--small {
+    @include theme-var(color, c-foreground-focal);
     font: 500 17px / 1.4 $ff-primary;
     letter-spacing: 0;
   }

@@ -1,6 +1,7 @@
 import ExperienceDesign from "./partials/ExperienceDesign";
 import ExperienceEngineering from "./partials/ExperienceEngineering";
 import Text from "../components/Text";
+import Browser from "../components/Browser";
 import VisualTearElement from "../components/VisualTearElement";
 
 const Intro = () => (<>
@@ -77,6 +78,112 @@ const Intro = () => (<>
       {/* Prior to that, I ran a small UI design studio that designed user interfaces with product agencies &amp; startups and worked for international brands as a design engineer in a few big-name digital marketing agencies. */}
       Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
     </Text>
+  </div>
+  <div className="c-wrapper c-wrapper--accent c-wrapper--flush u-border-bottom">
+    <div class="c-container-2col">
+      <div class="c-container-2col__item">
+        <Text type="title" modifier="medium" className="u-margin-bottom-none">
+          My Work (Design)
+          <span class="c-title__subtle">2018 – 2019</span>
+        </Text>
+        <Text type="paragraph" modifier="sans-small">
+          Earlier in my career, I ran a small UI design studio
+        </Text>
+        <Text type="paragraph" modifier="medium">
+          Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
+        </Text>
+        <Text type="title" modifier="smallest">
+          I Delivered
+        </Text>
+        <Text type="paragraph" modifier="sans-small">
+          Design System, React Engineering, RoR Development
+        </Text>
+        <Browser
+          src="/static/media/cover1.37e6df1b.png"
+          className="u-margin-vertical"
+        />
+      </div>
+      <div class="c-container-2col__item">
+        <Text type="title" modifier="medium" className="u-margin-bottom-none">
+          My Work (Design)
+          <span class="c-title__subtle">2018 – 2019</span>
+        </Text>
+        <Text type="paragraph" modifier="sans-small">
+          Earlier in my career, I ran a small UI design studio
+        </Text>
+        <Text type="paragraph" modifier="medium">
+          Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
+        </Text>
+        <Text type="title" modifier="smallest">
+          I Delivered
+        </Text>
+        <Text type="paragraph" modifier="sans-small">
+          Design System, React Engineering, RoR Development
+        </Text>
+        <Browser
+          src="/static/media/cover1.37e6df1b.png"
+          className="u-margin-vertical"
+        />
+      </div>
+    </div>
+    <div class="c-container-2col">
+      <div class="c-container-2col__item">
+        <Text type="title" modifier="medium" className="u-margin-bottom-none">
+          My Work (Design)
+          <span class="c-title__subtle">2018 – 2019</span>
+        </Text>
+        <Text type="paragraph" modifier="sans-small">
+          Earlier in my career, I ran a small UI design studio
+        </Text>
+        <Text type="paragraph" modifier="medium">
+          Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
+        </Text>
+        <Text type="title" modifier="smallest">
+          I Delivered
+        </Text>
+        <Text type="paragraph" modifier="sans-small">
+          Design System, React Engineering, RoR Development
+        </Text>
+        <Browser
+          src="/static/media/cover1.37e6df1b.png"
+          className="u-margin-top"
+        />
+      </div>
+      <div class="c-container-2col__item">
+        <Text type="title" modifier="medium">
+          More Work
+        </Text>
+        <Text type="paragraph" modifier="sans-medium">
+          Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samples, email me at
+        </Text>
+        <Text type="title" modifier="small">
+          BMW
+        </Text>
+        <Text type="paragraph" modifier="sans-medium">
+          Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
+        </Text>
+        <Text type="title" modifier="small">
+          Flatiron Code School
+        </Text>
+        <Text type="paragraph" modifier="sans-medium">
+          Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
+        </Text>
+        <Text type="title" modifier="small">
+          ECHO Tools, North America
+        </Text>
+        <Text type="paragraph" modifier="sans-medium">
+          Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
+        </Text>
+        <Text type="title" modifier="small">
+          The Outdoor Channel
+        </Text>
+        <Text type="paragraph" modifier="sans-medium">
+          Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
+        </Text>
+      </div>
+    </div>
+  </div>
+  <div className="c-wrapper c-wrapper--slim c-wrapper--accent">
     <VisualTearElement
       styleIndex={0}
       colorVar='--c-background-primary'

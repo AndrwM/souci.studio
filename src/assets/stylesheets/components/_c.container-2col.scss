@@ -19,10 +19,13 @@
       flex-direction: column;
 
       &:nth-child(1) {
+        border-top: 1px solid;
+        @include theme-var(border-color, c-border);
         padding: 14vh 6vw 0px 0px;
       }
 
       &:nth-child(2) {
+        border-top: 1px solid;
         border-left: 1px solid;
         @include theme-var(border-color, c-border);
         padding: 14vh 0px 0px 6vw

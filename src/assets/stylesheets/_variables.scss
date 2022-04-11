@@ -11,7 +11,7 @@ $bp-desk: "(min-width: #{$w-desk})";
 
 $border-radius: 5px;
 $font-size: 20px;
-$page-max-width: 1300px;
+$page-max-width: 1600px;
 
 //----------------- Z-Index
 $z-1: 10;
@@ -39,6 +39,7 @@ $colors-light: (
   // Neutrals
   c-grey-dark: #252A2D,
   c-foreground-medium: #343f48,
+  c-foreground-focal: #523e1c,
   c-grey-extralight: #f8fdff,
 
   c-system: #171717,
@@ -55,10 +56,11 @@ $colors-dark: (
   // Neutrals
   c-grey-dark: #ffe5d3,
   c-foreground-medium: #f3d8b7,
+  c-foreground-focal: #f8fdff,
   c-grey-extralight: #f8fdff,
 
   c-system: #171717,
-  c-border: #F4F4F4,
+  c-border: #413131,
 );
 
 //----------------- Type Mixins
