@@ -11,7 +11,7 @@ $bp-desk: "(min-width: #{$w-desk})";
 
 $border-radius: 5px;
 $font-size: 20px;
-$page-max-width: 1600px;
+$page-max-width: 1400px;
 
 //----------------- Z-Index
 $z-1: 10;
@@ -31,19 +31,20 @@ $s-xlarge: 72px;
 //----------------- Colors
 
 $colors-light: (
-  c-background-primary: #fdebd1,
+  // c-background-primary: #fdebd1, // etsy color
+  c-background-primary: #e1fdd1,
   c-background-accent: #fff9f0,
   c-primary: #6a5ef5,
   c-primary-200: rgba(#6a5ef5, 0.5),
 
   // Neutrals
-  c-grey-dark: #252A2D,
+  c-foreground-light: #4f4744,
   c-foreground-medium: #343f48,
-  c-foreground-focal: #523e1c,
+  c-foreground-focal: #0f150a,
   c-grey-extralight: #f8fdff,
 
   c-system: #171717,
-  c-border: #F4F4F4,
+  c-border: #e9dbdb,
 );
 
 $colors-dark: (
@@ -54,7 +55,7 @@ $colors-dark: (
   c-primary-200: rgba(#6a5ef5, 0.5),
 
   // Neutrals
-  c-grey-dark: #ffe5d3,
+  c-foreground-light: #ffe5d3,
   c-foreground-medium: #f3d8b7,
   c-foreground-focal: #f8fdff,
   c-grey-extralight: #f8fdff,

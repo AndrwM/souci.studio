@@ -1,5 +1,5 @@
 // .u-border-dark {
-//   $border-value: 1px solid rgba(#000000, 0.06) !important;
+//   $border-value: 1px solid rgba(#000000, 0.06);
 
 //   &-horizontal {
 //     border-top: $border-value;
@@ -12,23 +12,52 @@
 //   &-top { border-top: $border-value; }
 // }
 
-// .u-border {
-//   $border-value: 1px solid $c-border !important;
-//   border: $border-value;
+.u-border {
+  $border-value: 1px solid;
+  border: $border-value;
+  @include theme-var(border-color, c-border);
 
-//   &-horizontal {
-//     border-top: $border-value;
-//     border-bottom: $border-value;
-//   }
+  &-horizontal {
+    border-top: $border-value;
+    border-bottom: $border-value;
+    @include theme-var(border-color, c-border);
+  }
 
-//   &-left { border-left: $border-value; }
-//   &-right { border-right: $border-value; }
-//   &-bottom { border-bottom: $border-value; }
-//   &-top { border-top: $border-value; }
+  &-left {
+    border-left: $border-value;
+    @include theme-var(border-color, c-border);
+  }
+  &-right {
+    border-right: $border-value;
+    @include theme-var(border-color, c-border);
+  }
+  &-bottom {
+    border-bottom: $border-value;
+    @include theme-var(border-color, c-border);
+  }
+  &-top {
+    border-top: $border-value;
+    @include theme-var(border-color, c-border);
+  }
 
-//   &-none { border: none !important; }
-//   &-left-none { border-left: none !important; }
-//   &-right-none { border-right: none !important; }
-//   &-bottom-none { border-bottom: none !important; }
-//   &-top-none { border-top: none !important; }
-// }
+  &-none {
+    border: none;
+    @include theme-var(border-color, c-border);
+  }
+  &-left-none {
+    border-left: none;
+    @include theme-var(border-color, c-border);
+  }
+  &-right-none {
+    border-right: none;
+    @include theme-var(border-color, c-border);
+  }
+  &-bottom-none {
+    border-bottom: none;
+    @include theme-var(border-color, c-border);
+  }
+  &-top-none {
+    border-top: none;
+    @include theme-var(border-color, c-border);
+  }
+}

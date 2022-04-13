@@ -4,7 +4,7 @@
   max-width: 680px;
   padding: 0;
 
-  @include theme-var(color, c-grey-dark);
+  @include theme-var(color, c-foreground-light);
 
   @media #{$bp-hand} { font: 400 18px / 1.65 $ff-secondary; }
   @media #{$bp-lap} { font: 400 24px / 1.65 $ff-secondary; }
@@ -81,7 +81,7 @@
     max-width: 980px;
     margin: 0 0 45px;
 
-    @include theme-var(color, c-grey-dark);
+    @include theme-var(color, c-foreground-light);
 
     @media #{$bp-lap} { font: 400 34px / 1.4 $ff-display; }
     @media #{$bp-desk} { font: 400 44px / 1.4 $ff-display; }
@@ -92,7 +92,7 @@
     max-width: none;
     margin: 0 0 52px;
 
-    @include theme-var(color, c-grey-dark);
+    @include theme-var(color, c-foreground-focal);
 
     @media #{$bp-hand} { font: 400 44px / 1.25 $ff-display; }
     @media #{$bp-lap} { font: 400 60px / 1.25 $ff-display; }

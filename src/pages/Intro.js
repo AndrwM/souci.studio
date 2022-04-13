@@ -5,7 +5,7 @@ import Browser from "../components/Browser";
 import VisualTearElement from "../components/VisualTearElement";
 
 const Intro = () => (<>
-  <div className="c-wrapper c-wrapper--sepia u-padding-bottom">
+  <div className="c-wrapper c-wrapper--sepia u-padding-bottom-large">
     <Text type="paragraph" modifier="xlarge">
       I’m a product designer &amp; web&nbsp;engineer<br/>specializing in design systems.
       <span className="c-emoji c-emoji--large u-animate-wave">👋</span>
@@ -19,15 +19,15 @@ const Intro = () => (<>
   </div>
   <div className="c-wrapper c-wrapper--slim c-wrapper--accent">
     <VisualTearElement
-      styleIndex={1}
+      styleIndex={2}
       colorVar='--c-background-primary'
       style={{
         height: 12,
-        width: '95%',
+        width: '100%',
         top: '0px'
       }}
     />
-    <div className="c-grid c-grid--large">
+    <div className="c-grid c-grid--large u-margin-vertical">
       <div className="c-grid__cell u-1/2--desk">
         <Text type="title" modifier="small" className="u-margin-top-small">Design Experience</Text>
         <ExperienceDesign />
@@ -79,12 +79,12 @@ const Intro = () => (<>
       Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
     </Text>
   </div>
-  <div className="c-wrapper c-wrapper--accent c-wrapper--flush u-border-bottom">
-    <div class="c-container-2col">
-      <div class="c-container-2col__item">
+  <div className="c-wrapper c-wrapper--accent c-wrapper--flush u-border-top">
+    <div className="c-container-2col">
+      <div className="c-container-2col__item">
         <Text type="title" modifier="medium" className="u-margin-bottom-none">
           My Work (Design)
-          <span class="c-title__subtle">2018 – 2019</span>
+          <span className="c-title__subtle">2018 – 2019</span>
         </Text>
         <Text type="paragraph" modifier="sans-small">
           Earlier in my career, I ran a small UI design studio
@@ -103,10 +103,10 @@ const Intro = () => (<>
           className="u-margin-vertical"
         />
       </div>
-      <div class="c-container-2col__item">
+      <div className="c-container-2col__item">
         <Text type="title" modifier="medium" className="u-margin-bottom-none">
           My Work (Design)
-          <span class="c-title__subtle">2018 – 2019</span>
+          <span className="c-title__subtle">2018 – 2019</span>
         </Text>
         <Text type="paragraph" modifier="sans-small">
           Earlier in my career, I ran a small UI design studio
@@ -126,11 +126,11 @@ const Intro = () => (<>
         />
       </div>
     </div>
-    <div class="c-container-2col">
-      <div class="c-container-2col__item">
+    <div className="c-container-2col">
+      <div className="c-container-2col__item">
         <Text type="title" modifier="medium" className="u-margin-bottom-none">
           My Work (Design)
-          <span class="c-title__subtle">2018 – 2019</span>
+          <span className="c-title__subtle">2018 – 2019</span>
         </Text>
         <Text type="paragraph" modifier="sans-small">
           Earlier in my career, I ran a small UI design studio
@@ -149,7 +149,7 @@ const Intro = () => (<>
           className="u-margin-top"
         />
       </div>
-      <div class="c-container-2col__item">
+      <div className="c-container-2col__item u-border-top">
         <Text type="title" modifier="medium">
           More Work
         </Text>
