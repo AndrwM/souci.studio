@@ -18,6 +18,7 @@ const App = () => (
         <Route path="work" element={<Work />} />
       </Route>
     </Routes>
+
   </BrowserRouter>
 );
 

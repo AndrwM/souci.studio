@@ -13,7 +13,7 @@
 // }
 
 .u-border {
-  $border-value: 1px solid;
+  $border-value: 1px dashed;
   border: $border-value;
   @include theme-var(border-color, c-border);
 

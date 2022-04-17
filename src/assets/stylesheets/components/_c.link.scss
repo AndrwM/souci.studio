@@ -28,7 +28,7 @@
 
   &[href]:hover {
     @include theme-var(background, c-primary);
-    @include theme-var(color, c-grey-extralight);
+    @include theme-var(color, c-foreground-xlight);
 
     &::before {
       @include theme-var(background, c-primary, 0.5);
@@ -77,7 +77,7 @@
   }
 
   &--on-dark {
-    color: c-grey-extralight;
+    color: c-foreground-xlight;
 
     &.c-link--active {
       background: rgba(#ffffff, 0.2);

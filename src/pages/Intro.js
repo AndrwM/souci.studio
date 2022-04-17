@@ -7,7 +7,7 @@ import VisualTearElement from "../components/VisualTearElement";
 const Intro = () => (<>
   <div className="c-wrapper c-wrapper--sepia u-padding-bottom-large">
     <Text type="paragraph" modifier="xlarge">
-      I’m a product designer &amp; web&nbsp;engineer<br/>specializing in design systems.
+      I’m a product designer &amp; web&nbsp;engineer <br/>specializing in design systems.
       <span className="c-emoji c-emoji--large u-animate-wave">👋</span>
     </Text>
     <Text type="paragraph">
@@ -45,7 +45,6 @@ const Intro = () => (<>
       colorVar='--c-background-accent'
       style={{
         height: 10,
-        width: '80%',
         top: '0px'
       }}
     />
@@ -149,7 +148,7 @@ const Intro = () => (<>
           className="u-margin-top"
         />
       </div>
-      <div className="c-container-2col__item u-border-top">
+      <div className="c-container-2col__item u-border-top u-padding-bottom-large">
         <Text type="title" modifier="medium">
           More Work
         </Text>
@@ -182,14 +181,11 @@ const Intro = () => (<>
         </Text>
       </div>
     </div>
-  </div>
-  <div className="c-wrapper c-wrapper--slim c-wrapper--accent">
     <VisualTearElement
       styleIndex={0}
       colorVar='--c-background-primary'
       style={{
         height: 10,
-        width: '80%',
         bottom: 0
       }}
     />

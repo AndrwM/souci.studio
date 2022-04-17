@@ -6,7 +6,7 @@
 
   @include theme-var(color, c-foreground-light);
 
-  @media #{$bp-hand} { font: 400 18px / 1.65 $ff-secondary; }
+  @media #{$bp-hand} { font: 400 22px / 1.65 $ff-secondary; }
   @media #{$bp-lap} { font: 400 24px / 1.65 $ff-secondary; }
 
   br {

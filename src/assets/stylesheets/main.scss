@@ -52,8 +52,8 @@ img {
 }
 
 ::selection {
-  @include theme-var(background, c-primary, 0.7);
-  @include theme-var(color, c-primary);
+  @include theme-var(background, c-foreground-medium);
+  @include theme-var(color, c-background-primary);
 }
 
 [js-breakpoint] {
@@ -83,6 +83,7 @@ img {
 @import "components/c.grid";
 @import "components/c.toggle";
 @import "components/c.loading";
+@import "components/c.overlay-modal";
 
 //---------------------- Utilities
 @import "utilities/u.spacing";
