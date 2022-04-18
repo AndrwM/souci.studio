@@ -35,7 +35,7 @@ body {
   box-sizing: border-box;
 
   font: 400 18px / 1.8 $ff-primary;
-  min-height: 100%;
+  min-height: 100vh;
   overflow-x: hidden;
   width: 100%;
   margin: 0;
@@ -67,6 +67,10 @@ img {
 
   @media #{$bp-lap} { z-index: 1; }
   @media #{$bp-desk} { z-index: 2; }
+}
+
+#root {
+  min-height: 100vh;
 }
 
 //---------------------- Components

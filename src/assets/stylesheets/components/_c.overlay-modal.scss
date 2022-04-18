@@ -9,7 +9,8 @@
 
 
   @include theme-var(background-color, c-background-accent2);
-  padding: 20vw;
+  padding: 20vh 20vw;
+  overflow-y: scroll;
 
   top: 100%;
   // height: 0vh;

@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import ReactDOM from 'react-dom';
 import { useState, useEffect } from 'react';
 import classnames from 'classnames';
+import { Link } from "react-router-dom";
 
 const OverlayModal = () => {
   const [isActive, setIsActive] = useState(false);
@@ -42,7 +43,7 @@ const OverlayModal = () => {
         onMouseLeave={() => setHasHover(false)}
         className={buttonClassNames}
         children={buttonText}
-        tabindex="0"
+        tabIndex="0"
       />
       {ReactDOM.createPortal(
         <div className={modalClassNames}>
@@ -51,7 +52,7 @@ const OverlayModal = () => {
             <li className="c-list__item c-list__item--remote"><a href="aa" className="c-link c-link--arrow-remote">LinkedIn</a></li>
             <li className="c-list__item c-list__item--remote"><a href="aa" className="c-link c-link--arrow-remote">Github</a></li>
             <li className="c-list__item c-list__item--diamond"><a href="aa" className="c-link">Colophon</a></li>
-            <li className="c-list__item c-list__item--rocket"><a href="aa" className="c-link">Case Studies <span className="u-subtler">&nbsp;(&nbsp;2019&nbsp;)</span></a></li>
+            <li className="c-list__item c-list__item--wave"><Link to="/wayback-machine" onClick={() => setIsActive(false)} className="c-link">Wayback: 2019</Link></li>
           </ul>
         </div>,
         document.body
