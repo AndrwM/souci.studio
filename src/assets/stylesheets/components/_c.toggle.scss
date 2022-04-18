@@ -24,10 +24,7 @@ $-radius: 20px;
     @include theme-var(border-color, c-primary-200);
   }
 
-  &:focus,
-  &:active {
-    @include theme-var(border-color, c-primary);
-  }
+  @include button-focus;
 
   &::after {
     content: "";

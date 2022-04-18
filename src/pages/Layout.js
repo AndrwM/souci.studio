@@ -3,10 +3,14 @@ import ThemeToggle from '../components/ThemeToggle';
 import OverlayModal from "../components/OverlayModal";
 
 const Layout = () => (<>
-  <div style={{position: 'fixed', bottom: 20, right: 20, zIndex: 3000}}>
-    <ThemeToggle />
+  <div className='c-overlay-hud'>
+    <div className='c-overlay-hud__col-primary'>
+      <OverlayModal />
+    </div>
+    <div className='c-overlay-hud__col'>
+      <ThemeToggle />
+    </div>
   </div>
-  <OverlayModal />
   <Outlet />
 </>);
 

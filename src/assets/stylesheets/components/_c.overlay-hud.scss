@@ -1,0 +1,18 @@
+.c-overlay-hud {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 3000;
+  display: flex;
+  align-items: baseline;
+  @include theme-var(background-color, c-background-accent2-dark);
+}
+
+.c-overlay-hud__col-primary {
+  flex: 1;
+}
+
+.c-overlay-hud__col {
+  padding: 0 2vw;
+}

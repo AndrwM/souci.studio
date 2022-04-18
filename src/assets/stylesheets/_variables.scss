@@ -28,8 +28,7 @@ $s-regular: 36px;
 $s-large: 54px;
 $s-xlarge: 72px;
 
-//----------------- Colors
-
+//----------------- Theme Colors
 $colors-light: (
   c-background-primary-animation-alternate: #fdebd1,
   c-background-primary: #e1fdd1,
@@ -69,6 +68,8 @@ $colors-dark: (
   c-system: #171717,
   c-border: #413131,
 );
+
+$DEFAULT-THEME: $colors-light;
 
 //----------------- Type Mixins
 $ff-primary: "Graphik", sans-serif;

@@ -56,6 +56,10 @@ img {
   @include theme-var(color, c-background-primary);
 }
 
+[js-scroll-freeze="true"] {
+  overflow-y: hidden;
+}
+
 [js-breakpoint] {
   display: none;
   position: relative;
@@ -84,6 +88,7 @@ img {
 @import "components/c.toggle";
 @import "components/c.loading";
 @import "components/c.overlay-modal";
+@import "components/c.overlay-hud";
 
 //---------------------- Utilities
 @import "utilities/u.spacing";

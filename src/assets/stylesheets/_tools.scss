@@ -42,8 +42,8 @@
 }
 
 // ------- Css Variable Fallback
-@mixin theme-var($property, $var, $alpha: null, $fallback-theme: $colors-light) {
-  #{$property}: map-get($fallback-theme, $var);
+@mixin theme-var($property, $var, $alpha: null) {
+  #{$property}: map-get($DEFAULT-THEME, $var);
   #{$property}: var(--#{$var});
 }
 
@@ -94,7 +94,6 @@
   }
 }
 
-
 //-------- Wave
 @mixin wave {
   @keyframes float-mask {
@@ -111,4 +110,26 @@
   background-position: 0% bottom;
   background-size: 200vw;
   animation: 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) float-mask infinite;
+}
+
+//-------- Focus And Fade
+@mixin button-focus($focus-color: c-primary, $blur-color: c-primary-200) {
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  outline: none;
+
+  &:focus {
+    border-width: 1px;
+    @include theme-var(border-color, $blur-color);
+  }
+
+  &:focus-visible {
+    border-width: 3px;
+    @include theme-var(border-color, $focus-color);
+  }
+
+  &:active {
+    border-width: 3px;
+    @include theme-var(border-color, $focus-color);
+  }
 }
