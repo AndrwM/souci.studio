@@ -115,7 +115,7 @@
 //-------- Focus And Fade
 @mixin button-focus($focus-color: c-primary, $blur-color: c-primary-200) {
   box-sizing: border-box;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   outline: none;
 
   &:hover {

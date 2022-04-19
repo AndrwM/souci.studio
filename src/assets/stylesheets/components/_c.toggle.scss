@@ -4,11 +4,9 @@ $-toggle-width: 80px;
 $-radius: 20px;
 
 .c-toggle {
-  border: 1px solid;
   cursor: pointer;
   outline: 0;
   position: relative;
-  border: 2px solid;
   border-radius: $-radius;
   height: 24px + $-border;
   width: $-toggle-width;
