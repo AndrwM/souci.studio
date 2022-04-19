@@ -58,6 +58,9 @@ img {
 
 [js-scroll-freeze="true"] {
   overflow-y: hidden;
+
+  // Disable focus witin main app frame
+  #root { visibility: hidden; }
 }
 
 [js-breakpoint] {

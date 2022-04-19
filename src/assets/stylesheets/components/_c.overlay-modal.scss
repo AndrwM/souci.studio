@@ -7,7 +7,6 @@
   z-index: 1000;
   box-sizing: border-box;
 
-
   @include theme-var(background-color, c-background-accent2);
   padding: 20vh 20vw;
   overflow-y: scroll;
@@ -25,12 +24,13 @@
   top: 0;
 }
 
-$button_height_base: 68px;
+$button_height_base: 48px;
 .c-overlay-modal__button {
   width: 100%;
   height: $button_height_base;
   z-index: 2000;
   cursor: n-resize;
+  border-radius: $border-radius;
 
   transition:
     // height cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s,
@@ -52,8 +52,7 @@ $button_height_base: 68px;
 }
 
 .c-overlay-modal__button:hover {
-  @include theme-var(background-color, c-background-accent2-mid);
   @include theme-var(color, c-foreground-focal);
   // height: $button_height_base + 4px;
-  font-weight: 500;
+  // font-weight: 500;
 }

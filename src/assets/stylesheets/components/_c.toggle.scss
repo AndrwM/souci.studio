@@ -19,11 +19,6 @@ $-radius: 20px;
   @include theme-var(color, c-foreground-medium);
   @include theme-var(border-color, c-background-primary);
 
-
-  &:hover {
-    @include theme-var(border-color, c-primary-200);
-  }
-
   @include button-focus;
 
   &::after {

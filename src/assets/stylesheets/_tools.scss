@@ -118,6 +118,11 @@
   border: 2px solid transparent;
   outline: none;
 
+  &:hover {
+    border-width: 1px;
+    @include theme-var(border-color, c-primary-200);
+  }
+
   &:focus {
     border-width: 1px;
     @include theme-var(border-color, $blur-color);
