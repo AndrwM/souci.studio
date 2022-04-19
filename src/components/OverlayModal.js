@@ -1,7 +1,9 @@
 import { useMemo, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
-import { Link } from "react-router-dom";
+import Text from "./Text";
+
+import OverlayModalNavigationLink from "./OverlayModalNavigationLink";
 
 const OverlayModal = () => {
   const [isActive, setIsActive] = useState(false);
@@ -49,12 +51,28 @@ const OverlayModal = () => {
       {ReactDOM.createPortal(
         <div className={modalClassNames}>
           <ul className="c-list c-list--xlarge">
-            <li className="c-list__item c-list__item--wave"><a href="aa" tabIndex={linkTabIndex} className="c-link">About Me <span className="u-subtler">&nbsp;(&nbsp;You are here&nbsp;)</span></a></li>
-            <li className="c-list__item c-list__item--remote"><a href="aa" tabIndex={linkTabIndex} className="c-link c-link--arrow-remote">LinkedIn</a></li>
-            <li className="c-list__item c-list__item--remote"><a href="aa" tabIndex={linkTabIndex} className="c-link c-link--arrow-remote">Github</a></li>
-            <li className="c-list__item c-list__item--diamond"><a href="aa" tabIndex={linkTabIndex} className="c-link">Colophon</a></li>
-            <li className="c-list__item c-list__item--wave"><Link to="/wayback-machine" tabIndex={linkTabIndex} onClick={() => setIsActive(false)} className="c-link">Wayback: 2019</Link></li>
+            <li className="c-list__item c-list__item--wave">
+              <OverlayModalNavigationLink to="/" children="About Me" tabIndex={linkTabIndex} onClick={() => setIsActive(false)} />
+            </li>
+            <li className="c-list__item c-list__item--diamond">
+              <OverlayModalNavigationLink to="/colophon" children="Colophon" tabIndex={linkTabIndex} onClick={() => setIsActive(false)} />
+            </li>
           </ul>
+          <ul className="c-list c-list--large">
+            <li className="c-list__item c-list__item--remote">
+              <a href="https://www.linkedin.com/in/andrewmcintee/" tabIndex={linkTabIndex} className="c-link c-link--arrow-remote" target="_blank">LinkedIn</a>
+            </li>
+            <li className="c-list__item c-list__item--remote">
+              <a href="https://github.com/AndrwM" tabIndex={linkTabIndex} className="c-link c-link--arrow-remote" target="_blank">Github</a>
+            </li>
+            <li className="c-list__item c-list__item--history">
+              <a href="https://2019.andrew.mn" tabIndex={linkTabIndex} className="c-link c-link--arrow-remote" target="_blank">2019 Website</a>
+            </li>
+          </ul>
+          <p class="c-paragraph c-paragraph--sans-medium u-padding-top-small u-border-top">
+            Thanks for taking the time to learn about me.<br />
+            Pop me an email at <a href="mailto:studio@Andrew.mn" className="c-link">Studio@Andrew.mn</a> if you feel inclined.&nbsp;😎
+          </p>
         </div>,
         document.body
       )}

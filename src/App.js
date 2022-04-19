@@ -8,14 +8,16 @@ import "./assets/stylesheets/main.scss";
 
 import Layout from "./pages/Layout";
 import Intro from "./pages/Intro";
-import Wayback from "./pages/Wayback";
+import Colophon from "./pages/Colophon";
+// import Wayback from "./pages/Wayback";
 
 const App = () => (
   <HashRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Intro />} />
-        <Route path="/wayback-machine" element={<Wayback />} />
+        <Route path="/colophon" element={<Colophon />} />
+        {/* <Route path="/wayback-machine" element={<Wayback />} /> */}
       </Route>
     </Routes>
   </HashRouter>
