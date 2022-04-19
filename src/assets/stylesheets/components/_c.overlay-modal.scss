@@ -8,7 +8,7 @@
   box-sizing: border-box;
 
   @include theme-var(background-color, c-background-accent2);
-  padding: 20vh 7vw;
+  padding: 13vh 7vw 0;
   overflow-y: scroll;
 
   top: 100%;
