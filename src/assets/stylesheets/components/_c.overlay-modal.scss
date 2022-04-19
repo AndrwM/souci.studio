@@ -8,7 +8,7 @@
   box-sizing: border-box;
 
   @include theme-var(background-color, c-background-accent2);
-  padding: 20vh 20vw;
+  padding: 20vh 10vw;
   overflow-y: scroll;
 
   top: 100%;
@@ -18,6 +18,8 @@
     height cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s,
     top cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s
   ;
+
+  @media #{$bp-lap} { padding: 20vh 20vw; }
 }
 
 .c-overlay-modal--active {

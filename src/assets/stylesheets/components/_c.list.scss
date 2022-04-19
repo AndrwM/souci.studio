@@ -36,8 +36,8 @@
   }
 
   &--xlarge > .c-list__item {
-    font-size: 18px;
-    @media #{$bp-desk} { font-size: 20px; }
+    font-size: 24px;
+    @media #{$bp-desk} { font-size: 22px; }
   }
 
   &--horizontal {
@@ -77,29 +77,4 @@
   @include emoji-bullet("exp-2",  "🔨");
   @include emoji-bullet("exp-3",  "⚒️");
   @include emoji-bullet("exp-4",  "⚙️");
-
-  // &--rocket .c-list__item::before,
-  // .c-list__item--rocket::before {
-  //   content: '🚀';
-  //   @include emoji-spacing;
-  // }
-
-  // &--sparkle .c-list__item::before,
-  // .c-list__item--sparkle::before {
-  //   content: '✨';
-  //   @include emoji-spacing;
-  // }
-
-  // &--glove .c-list__item::before,
-  // .c-list__item--glove::before {
-  //   content: '🧤';
-  //   @include emoji-spacing;
-  // }
-
-  // &--measure .c-list__item::before,
-  // .c-list__item--measure::before {
-  //   content: '📐';
-  //   @include emoji-spacing;
-  // }
-
 }

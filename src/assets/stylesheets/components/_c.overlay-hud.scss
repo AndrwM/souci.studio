@@ -11,9 +11,13 @@
 
 .c-overlay-hud__col-primary {
   flex: 1;
-  padding: 1vh 0 1vh 1vw;
+  padding: 1vh 0 1vh 2vw;
+  @media #{$bp-lap} { padding: 1vh 0 1vh 1vw; }
+  @media #{$bp-desk} { padding: 1vh 0 1vh 0.5vw; }
 }
 
 .c-overlay-hud__col {
-  padding: 0 1vw;
+  padding: 0 2vw;
+  @media #{$bp-lap} { padding: 0 1vw; }
+  @media #{$bp-desk} { padding: 0 0.5vw; }
 }
