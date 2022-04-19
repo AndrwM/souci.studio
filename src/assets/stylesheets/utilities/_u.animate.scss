@@ -40,7 +40,8 @@
   transform: rotate(0);
   animation: 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) wave;
   animation-delay: 2s;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
+  @media #{$bp-hand} { animation-iteration-count: 1; }
 
   :hover > & {
     animation: 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) wave;

@@ -36,8 +36,7 @@
   }
 
   &--xlarge > .c-list__item {
-    font-size: 24px;
-    @media #{$bp-desk} { font-size: 22px; }
+    font-size: 22px;
   }
 
   &--horizontal {

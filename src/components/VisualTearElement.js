@@ -13,10 +13,10 @@ const VisualTearElement = ({
     left: '0',
     right: '0',
     margin: 'auto',
+    width: '100%',
     ...(colorVar ? { fill: `var(${colorVar})` } : {}),
     ...style
   };
-  console.log(computedStyle)
 
   const elements = [
   <svg style={computedStyle} {...rest} className="tear-1" viewBox="0 0 1280 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
