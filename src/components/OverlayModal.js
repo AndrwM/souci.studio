@@ -1,18 +1,23 @@
-import { useMemo, useEffect, useState } from 'react';
+import { useMemo, useEffect, useState, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
-import Text from "./Text";
+import queryFirstFocusable from "../util/queryFirstFocusable";
+import useEscKeyListener from "../util/useEscKeyListener";
 
 import OverlayModalNavigationLink from "./OverlayModalNavigationLink";
 
-const OverlayModal = () => {
+const OverlayModal = (props) => {
   const [isActive, setIsActive] = useState(false);
   const [hasHover, setHasHover] = useState(false);
-  const linkTabIndex = useMemo(() => (isActive ? 0 : -1), [isActive])
+  const linkTabIndex = useMemo(() => (isActive ? 0 : -1), [isActive]);
+  const modalRef = useRef();
+
+  useEscKeyListener(() => setIsActive(false), isActive);
 
   useEffect(() => {
     if (isActive) {
-      document.body.setAttribute('js-scroll-freeze', true)
+      document.body.setAttribute('js-scroll-freeze', true);
+      // queryFirstFocusable(modalRef.current).focus();
     } else {
       document.body.setAttribute('js-scroll-freeze', false)
     }
@@ -40,8 +45,7 @@ const OverlayModal = () => {
   return (
     <>
       <button
-        // ref={buttonRef}
-        // onClick={() => { setIsActive(v => !v); buttonRef.current.focus()}}
+        {...props}
         onClick={() => setIsActive(v => !v)}
         onMouseEnter={() => setHasHover(true)}
         onMouseLeave={() => setHasHover(false)}
@@ -49,7 +53,10 @@ const OverlayModal = () => {
         children={buttonText}
       />
       {ReactDOM.createPortal(
-        <div className={modalClassNames}>
+        <div
+          className={modalClassNames}
+          ref={modalRef}
+        >
           <ul className="c-list c-list--xlarge">
             <li className="c-list__item c-list__item--wave">
               <OverlayModalNavigationLink to="/" children="About Me" tabIndex={linkTabIndex} onClick={() => setIsActive(false)} />
@@ -66,12 +73,12 @@ const OverlayModal = () => {
               <a href="https://github.com/AndrwM" tabIndex={linkTabIndex} className="c-link c-link--arrow-remote" target="_blank">Github</a>
             </li>
             <li className="c-list__item c-list__item--history">
-              <a href="https://2019.andrew.mn" tabIndex={linkTabIndex} className="c-link c-link--arrow-remote" target="_blank">2019 Website</a>
+              <a href="https://2019.andrew.mn" tabIndex={linkTabIndex} className="c-link c-link--arrow-remote" target="_blank">2019 Archival Website</a>
             </li>
           </ul>
-          <p class="c-paragraph c-paragraph--sans-medium u-padding-top-small u-border-top">
-            Thanks for taking the time to learn about me.<br />
-            Pop me an email at <a href="mailto:studio@Andrew.mn" className="c-link">Studio@Andrew.mn</a> if you feel inclined.&nbsp;😎
+          <p className="c-paragraph c-paragraph--sans-medium u-padding-top-small u-border-top">
+            Thanks for taking the time to learn about me.&nbsp;<br />
+            Contact me at <a href="mailto:studio@Andrew.mn" className="c-link" tabIndex={linkTabIndex}>Studio@Andrew.mn</a> if you feel inclined.&nbsp;😎
           </p>
         </div>,
         document.body

@@ -11,6 +11,9 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  // Squeezing this element just little closer to prevent the x-padding from making the c-link appear misaligned
+  margin-right: -($s-xtiny / 2);
+  margin-left: -($s-xtiny / 2);
   padding-left: $s-xtiny;
   padding-right: $s-xtiny;
   border-radius: $border-radius;
@@ -26,6 +29,16 @@
     @include theme-var(background, c-primary, 0.04);
   }
 
+  &[href]:focus {
+    outline: 2px solid;
+    @include theme-var(outline-color, c-primary);
+    &::before {
+      @include theme-var(background, c-primary, 0.5);
+      transform: translateY(-3px);
+    }
+  }
+
+  &[href]:active,
   &[href]:hover {
     @include theme-var(background, c-primary);
     @include theme-var(color, c-foreground-xlight);

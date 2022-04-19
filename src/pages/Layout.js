@@ -7,10 +7,10 @@ const Layout = () => (<>
   {ReactDOM.createPortal(
     <div className='c-overlay-hud'>
       <div className='c-overlay-hud__col-primary'>
-        <OverlayModal />
+        <OverlayModal tabIndex={1} />
       </div>
       <div className='c-overlay-hud__col'>
-        <ThemeToggle />
+        <ThemeToggle tabIndex={1} />
       </div>
     </div>,
     document.body
