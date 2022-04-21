@@ -5,26 +5,30 @@ import Browser from "../components/Browser";
 import VisualTearElement from "../components/VisualTearElement";
 
 const Intro = () => (<>
-  <div className="c-wrapper c-wrapper--sepia u-padding-bottom-large">
+  <div className="c-wrapper c-wrapper--accent u-padding-bottom-large">
     <Text type="paragraph" modifier="xlarge">
-      I’m a product designer &amp; web&nbsp;engineer <br/>specializing in design systems.
+        I’m a product designer &amp; web&nbsp;engineer <br/>specializing in design systems.
       <span className="c-emoji c-emoji--large u-animate-wave">👋</span>
     </Text>
     <Text type="paragraph">
       I have over 8 years of industry experience and most recently lead design &amp; frontend engineering on a product team. I have also been a remote-worker for over 4 years.
     </Text>
+    <Text type="title" modifier="small" className="u-margin-top-large">Currently&hellip;</Text>
     <Text type="paragraph">
-      I’m fascinated by the engineering that powers user interfaces and love helping product teams and startups create seamless user experiences. I’m fully capable in design and frontend engineer, but I can also dive into the server-side to build out modeling or functionality related to interface needs.
+      I’m fascinated by the engineering that powers user interfaces and love helping product teams and startups create seamless user experiences. I’m fully capable in design and frontend engineer,
+    </Text>
+    <Text type="paragraph">
+      My interests are climate change awareness, crypto skepticism, Rust, Javascript, eco-tourism.
     </Text>
   </div>
-  <div className="c-wrapper c-wrapper--slim c-wrapper--accent">
+  <div className="c-wrapper c-wrapper--slim c-wrapper--sepia">
     <VisualTearElement
       styleIndex={2}
-      colorVar='--c-background-primary'
+      colorVar='--c-background-accent'
       style={{
         height: 12,
         width: '100%',
-        top: '0px'
+        top: 0
       }}
     />
     <div className="c-grid c-grid--large u-margin-vertical">
@@ -37,39 +41,18 @@ const Intro = () => (<>
         <ExperienceEngineering />
       </div>
     </div>
-  </div>
-  <div className="c-wrapper c-wrapper--sepia">
     <VisualTearElement
       styleIndex={0}
-      flipY={true}
+      flipY={false}
       colorVar='--c-background-accent'
       style={{
         height: 10,
-        top: '0px'
-      }}
-    />
-    <Text type="title" modifier="small" className="u-margin-top-small">Experience (Engineering)</Text>
-    <Text type="paragraph">
-      {/* Most recently, I lead the creation and execution of design systems at Division Of Labor, a digital product development agency. There we partnered with alpha-stage startups to design and build their MVP products. */}
-      Most recently, I led design, frontend and user experience at a venture backed startup called OffSite. OffSite was spun out of Division of Labor, a digital product development agency where I led creation and execution of design systems for a variety of software products.
-    </Text>
-    <Text type="paragraph">
-      {/* Previous to this, I served as the co-founder and director of product design at Coindex Labs.I oversaw all user interface design, marketing visual design, and engineered prototypes of our crypotocurrency trading platform interface. */}
-      Prior to this, I served as the co-founder and director of product design at Coindex Labs. I oversaw all user interface design, marketing visual design, and engineered prototypes of our crypotocurrency trading platform interface. We made it to the final round of selection in a recent Tech Stars New York cohort.
-    </Text>
-    <VisualTearElement
-      styleIndex={1}
-      flipY={true}
-      colorVar='--c-background-accent'
-      style={{
-        height: 12,
-        width: '95%',
         bottom: 0
       }}
     />
   </div>
-  <div className="c-wrapper c-wrapper--slim c-wrapper--accent">
-    <Text type="title" modifier="small" className="u-margin-top-small">My Work (Design)</Text>
+  <div className="c-wrapper c-wrapper--accent c-wrapper--slim">
+    <Text type="title" modifier="small" className="u-margin-top-small">My Work (engineering)</Text>
     <Text type="paragraph">
       From 2015-'17, I worked as a senior software designer at The Iron Yard (now sold) working on the LMS product team.
     </Text>
@@ -77,25 +60,31 @@ const Intro = () => (<>
       {/* Prior to that, I ran a small UI design studio that designed user interfaces with product agencies &amp; startups and worked for international brands as a design engineer in a few big-name digital marketing agencies. */}
       Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
     </Text>
+    <Text type="paragraph">
+      List eng projects that I've worked on here!
+    </Text>
   </div>
-  <div className="c-wrapper c-wrapper--accent c-wrapper--flush u-border-top">
+  <div className="c-wrapper  c-wrapper--accent c-wrapper--flush u-border-top">
     <div className="c-container-2col">
       <div className="c-container-2col__item">
         <Text type="title" modifier="medium" className="u-margin-bottom-none">
-          My Work (Design)
-          <span className="c-title__subtle">2018 – 2019</span>
+          Sage UX Design System
+          <span className="c-title__subtle">2020 – 2021</span>
         </Text>
         <Text type="paragraph" modifier="sans-small">
-          Earlier in my career, I ran a small UI design studio
+          UX Developer at <strong>Kajabi</strong>
         </Text>
         <Text type="paragraph" modifier="medium">
-          Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
+          I worked on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.
+        </Text>
+        <Text type="paragraph" modifier="medium">
+          From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the frontend for an in-browser IDE and student messaging system.
         </Text>
         <Text type="title" modifier="smallest">
           I Delivered
         </Text>
         <Text type="paragraph" modifier="sans-small">
-          Design System, React Engineering, RoR Development
+          UI Design System, Frontend Engineering, RoR Development
         </Text>
         <Browser
           src="/static/media/cover1.37e6df1b.png"
@@ -104,20 +93,23 @@ const Intro = () => (<>
       </div>
       <div className="c-container-2col__item">
         <Text type="title" modifier="medium" className="u-margin-bottom-none">
-          My Work (Design)
+          Newline Education Platform
           <span className="c-title__subtle">2018 – 2019</span>
         </Text>
         <Text type="paragraph" modifier="sans-small">
-          Earlier in my career, I ran a small UI design studio
+          Senior UI Designer, Frontend Engineer, Remote Full-Time
         </Text>
         <Text type="paragraph" modifier="medium">
-          Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
+          I worked on the product team to bring a fun and interactive online classroom experience to over 10,000 students with our custom CSS design system.
+        </Text>
+        <Text type="paragraph" modifier="medium">
+          From the ground-up we designed, built, and documented a CSS component system with over 50 elements. It allowed anyone on the team to quickly assemble a view. In addition to authoring the design system, I worked with the engineering team in building the frontend for an in-browser IDE and student messaging system.
         </Text>
         <Text type="title" modifier="smallest">
           I Delivered
         </Text>
         <Text type="paragraph" modifier="sans-small">
-          Design System, React Engineering, RoR Development
+          UI Design System, Frontend Engineering, RoR Development
         </Text>
         <Browser
           src="/static/media/cover1.37e6df1b.png"
@@ -128,20 +120,20 @@ const Intro = () => (<>
     <div className="c-container-2col">
       <div className="c-container-2col__item">
         <Text type="title" modifier="medium" className="u-margin-bottom-none">
-          My Work (Design)
-          <span className="c-title__subtle">2018 – 2019</span>
+          Depends Canada Site
+          <span className="c-title__subtle">2013</span>
         </Text>
         <Text type="paragraph" modifier="sans-small">
-          Earlier in my career, I ran a small UI design studio
+          Lead Frontend Engineer
         </Text>
         <Text type="paragraph" modifier="medium">
-          Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
+          While working for Organic, Inc., I had the opportunity to lead the engineering for a brand new marketing website for the Canadian division of Depends adult incontinence products. In addition, I also oversaw how American and French language translations were implemented and managed their effect on the design specifications.
         </Text>
         <Text type="title" modifier="smallest">
           I Delivered
         </Text>
         <Text type="paragraph" modifier="sans-small">
-          Design System, React Engineering, RoR Development
+          UI Engineering on a .NET backend
         </Text>
         <Browser
           src="/static/media/cover1.37e6df1b.png"
@@ -153,28 +145,39 @@ const Intro = () => (<>
           More Work
         </Text>
         <Text type="paragraph" modifier="sans-medium">
-          Due to privacy restrictions, some of my work is not available publicly. If you would like to see engineering or marketing samples, email me at
+          Here are other notable works, content here
+        </Text>
+        <Text type="title" modifier="small">
+          South Carolina Dept. of Commerce&mdash;Free Code Camp Platform
+          <span className="c-title__subtle">2019</span>
+        </Text>
+        <Text type="paragraph" modifier="sans-medium">
+          I worked with SC Codes a program funded by the South Carolina Dept. Of Commerce. We built a free code education courses and an adjoining community platform with job-listings and statistics visualization. It was a a hit at the press conference and made state-wide news publications such as the The Post And Courier. The non-profit program grew 2,000 in the following month.
         </Text>
         <Text type="title" modifier="small">
           BMW
+          <span className="c-title__subtle">2019</span>
         </Text>
         <Text type="paragraph" modifier="sans-medium">
           Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
         </Text>
         <Text type="title" modifier="small">
           Flatiron Code School
+          <span className="c-title__subtle">2018</span>
         </Text>
         <Text type="paragraph" modifier="sans-medium">
           Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
         </Text>
         <Text type="title" modifier="small">
           ECHO Tools, North America
+          <span className="c-title__subtle">2015</span>
         </Text>
         <Text type="paragraph" modifier="sans-medium">
           Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
         </Text>
         <Text type="title" modifier="small">
           The Outdoor Channel
+          <span className="c-title__subtle">2009</span>
         </Text>
         <Text type="paragraph" modifier="sans-medium">
           Earlier in my career, I ran a small UI design studio that created user interfaces for product agencies & startups and worked for international brands as a design engineer in a few big-name digital marketing agencies.
