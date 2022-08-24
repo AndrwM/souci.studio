@@ -1,7 +1,4 @@
-import ExperienceDesign from "./partials/ExperienceDesign";
-import ExperienceEngineering from "./partials/ExperienceEngineering";
 import Text from "../components/Text";
-import Browser from "../components/Browser";
 import VisualTearElement from "../components/VisualTearElement";
 
 const Intro = () => (<>
