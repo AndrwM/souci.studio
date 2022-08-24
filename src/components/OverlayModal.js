@@ -62,9 +62,9 @@ const OverlayModal = (props) => {
             <li className="c-list__item c-list__item--wave">
               <OverlayModalNavigationLink to="/" children="About Me" tabIndex={linkTabIndex} onClick={() => setIsActive(false)} />
             </li>
-            <li className="c-list__item c-list__item--diamond">
+            {/* <li className="c-list__item c-list__item--diamond">
               <OverlayModalNavigationLink to="/colophon" children="Colophon" tabIndex={linkTabIndex} onClick={() => setIsActive(false)} />
-            </li>
+            </li> */}
           </ul>
           <ul className="c-list c-list--large">
             <li className="c-list__item c-list__item--remote">
