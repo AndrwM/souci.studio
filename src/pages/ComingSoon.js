@@ -2,9 +2,9 @@ import Text from "../components/Text";
 import VisualTearElement from "../components/VisualTearElement";
 
 const Intro = () => (<>
-  <div className="c-wrapper c-wrapper--accent u-padding-bottom-large">
+  <div className="c-wrapper c-wrapper--accent">
     <Text type="paragraph" modifier="xlarge" className="u-margin-bottom">
-      Welcome to my lil’ spot on the web <span className="c-emoji c-emoji--large u-animate-wave">👋</span>
+      Welcome to my lil’&nbsp;spot&nbsp;on&nbsp;the&nbsp;web&nbsp;<span className="c-emoji c-emoji--large u-animate-wave">👋</span>
     </Text>
     <Text type="paragraph">
       My name is Andrew&nbsp;McIntee.
