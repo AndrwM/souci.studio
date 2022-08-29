@@ -19,7 +19,7 @@ const Intro = () => (<>
     </Text>
     <Text type="title" modifier="small" className="u-margin-top">Where</Text>
     <Text type="paragraph">
-      As a long-time (pre-covid) remote worker, <span className="u-highlight">I call Atlanta home</span> but find myself traveling nine months out of the year with my remote-working partner and friends.
+      As a long-time (pre-covid) remote worker, <span className="u-highlight">I call Atlanta home</span> and, once again, I am traveling nine months out of the year with my remote-working partner and friends.
     </Text>
     <Text type="paragraph">
       Thanks for visting. <span className="u-highlight">Have a great day</span>. <span className="c-emoji">🌿</span>
