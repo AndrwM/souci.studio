@@ -42,9 +42,14 @@
 }
 
 // ------- Css Variable Fallback
-@mixin theme-var($property, $var, $alpha: null) {
-  #{$property}: map-get($DEFAULT-THEME, $var);
-  #{$property}: var(--#{$var});
+@mixin theme-var($property, $var, $important: false) {
+  @if $important {
+    #{$property}: map-get($DEFAULT-THEME, $var) !important;
+    #{$property}: var(--#{$var}) !important;
+  } @else {
+    #{$property}: map-get($DEFAULT-THEME, $var);
+    #{$property}: var(--#{$var});
+  }
 }
 
 //-------- Basic Media Query

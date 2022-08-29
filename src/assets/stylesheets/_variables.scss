@@ -32,6 +32,7 @@ $s-xlarge: 72px;
 $colors-light: (
   c-background-primary-animation-alternate: #fdebd1,
   c-background-primary: #e1fdd1,
+  c-background-primary-transparent: rgba(#e1fdd1, 0.9),
   c-background-accent: #fff9f0,
   c-background-accent2: #f3f0ff,
   c-background-accent2-dark: #d3e9fc,
@@ -43,15 +44,17 @@ $colors-light: (
   c-foreground-light: #4f4744,
   c-foreground-medium: #343f48,
   c-foreground-focal: #0f150a,
+  c-foreground-transparent: rgba(#343f48, 0.1),
 
   c-system: #171717,
   c-border: #e9dbdb,
 );
 
 $colors-dark: (
-  c-background-primary: #38332c,
+  c-background-primary: #232934,
+  c-background-primary-transparent: rgba(#2b323f, 0.2),
   // c-background-primary: #2e2e3e,
-  c-background-accent: #2e2922,
+  c-background-accent: #22292e,
   // c-background-accent: #25222e,
   c-background-accent2: #1d1d26,
   c-background-accent2-dark: #237652,
@@ -64,6 +67,7 @@ $colors-dark: (
   c-foreground-light: #ffe5d3,
   c-foreground-medium: #f3d8b7,
   c-foreground-focal: #f8fdff,
+  c-foreground-transparent: rgba(#e3d0b5, 0.1),
 
   c-system: #171717,
   c-border: #413131,

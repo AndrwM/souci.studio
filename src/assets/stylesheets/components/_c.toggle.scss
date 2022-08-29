@@ -1,14 +1,15 @@
 $-border: 4px;
-$-knob-size: 18px;
-$-toggle-width: 80px;
-$-radius: 20px;
+$-knob-size: 20px;
+$-toggle-width: 120px;
+$-radius: 18px;
+$-height: 32px;
 
 .c-toggle {
   cursor: pointer;
   outline: 0;
   position: relative;
   border-radius: $-radius;
-  height: 24px + $-border;
+  height: $-height + $-border;
   width: $-toggle-width;
   padding-left: 0;
   padding-right: $-knob-size;
