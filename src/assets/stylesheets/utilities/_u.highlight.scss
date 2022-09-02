@@ -4,6 +4,8 @@
     // font-size: 110%;
     // line-height: 100%;
     // @include theme-var(background-color, c-background-accent2-dark);
-    @include theme-var(color, c-foreground-light);
+    @media #{$bp-lap} {
+      @include theme-var(color, c-foreground-light);
+    }
   }
 }

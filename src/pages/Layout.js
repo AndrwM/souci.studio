@@ -10,7 +10,7 @@ const Layout = () => (<>
       <div className='c-overlay-hud__col-primary'>
         <OverlayModal tabIndex={1} />
       </div>
-      <div className='c-overlay-hud__col'>
+      <div className='c-overlay-hud__col c-overlay-hud__col--hide-mobile'>
         <HighlightModeToggle tabIndex={2} />
       </div>
       <div className='c-overlay-hud__col'>

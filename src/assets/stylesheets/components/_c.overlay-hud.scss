@@ -5,7 +5,7 @@
   left: 0;
   z-index: 3000;
   display: flex;
-  align-items: baseline;
+  align-items: center;
 
   @include theme-var(background-color, c-background-accent2-dark);
 }
@@ -19,8 +19,13 @@
 
 .c-overlay-hud__col {
   padding: 0 3vw;
-  border-left: 1px solid;
+  padding: 1vh 2vw;
   @include theme-var(border-left-color, c-background-primary-transparent);
-  @media #{$bp-lap} { padding: 0 1vw; }
-  @media #{$bp-desk} { padding: 0 0.5vw; }
+  @media #{$bp-lap} { padding: 1vh 1vw; }
+  @media #{$bp-desk} { padding: 1vh 0.5vw; }
+}
+
+.c-overlay-hud__col--hide-mobile {
+  display: none;
+  @media #{$bp-lap} { display: block; }
 }

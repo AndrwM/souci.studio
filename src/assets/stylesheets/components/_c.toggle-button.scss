@@ -1,0 +1,39 @@
+$-border: 4px;
+$-knob-size: 20px;
+$-height: 32px;
+
+.c-toggle-button {
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+  border-radius: $border-radius;
+  // height: $-height + $-border;
+  padding: $s-xtiny;
+  gap: $s-xtiny;
+  // padding-right: $-knob-size;
+  font: 400 16px / 1 $ff-primary;
+  @include theme-var(background-color, c-background-accent2-dark);
+  @include theme-var(color, c-foreground-medium);
+  @include theme-var(border-color, c-background-primary);
+
+  @include button-focus;
+
+  svg {
+    vertical-align: -6px;
+    path {
+      @include theme-var(fill, c-foreground-medium);
+    }
+  }
+}
+
+.c-toggle-button--active {
+  @include theme-var(background-color, c-primary);
+  @include theme-var(color, c-foreground-xlight);
+
+  svg path {
+    @include theme-var(fill, c-foreground-xlight);
+  }
+}

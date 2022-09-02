@@ -1,19 +1,21 @@
 $-border: 4px;
-$-knob-size: 20px;
-$-toggle-width: 120px;
-$-radius: 18px;
-$-height: 32px;
+$-knob-size: 14px;
+$-knob-border-size: 2px;
+$-knob-pad: 6px;
+$-toggle-width: 150px;
+$-radius: 100000px;
+$-height: 38px;
 
 .c-toggle {
   cursor: pointer;
   outline: 0;
   position: relative;
-  border-radius: $-radius;
+  border-radius: $border-radius;
   height: $-height + $-border;
   width: $-toggle-width;
   padding-left: 0;
   padding-right: $-knob-size;
-  font: 400 14px / 1 $ff-primary;
+  font: 400 16px / 1 $ff-primary;
   @include theme-var(background-color, c-background-accent);
   @include theme-var(color, c-foreground-medium);
   @include theme-var(border-color, c-background-primary);
@@ -27,12 +29,13 @@ $-height: 32px;
     height: $-knob-size;
     width: $-knob-size;
     position: absolute;
-    right: $-border;
+    right: $-border + $-knob-pad;
     top: 0;
     bottom: 0;
     margin-top: auto;
     margin-bottom: auto;
-    @include theme-var(background-color, c-foreground-medium);
+    border: solid $-knob-border-size;
+    @include theme-var(border-color, c-foreground-medium);
   }
 }
 
@@ -41,6 +44,6 @@ $-height: 32px;
   padding-left: $-knob-size;
 
   &::after {
-    right: calc(100% - #{$-knob-size} - #{$-border});
+    right: calc(100% - #{$-knob-size} - #{$-border} - #{$-knob-border-size} - #{$-knob-pad});
   }
 }

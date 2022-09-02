@@ -26,13 +26,15 @@
   top: 0;
 }
 
-$button_height_base: 44px;
+$button_height_base: 54px;
 .c-overlay-modal__button {
   width: 100%;
   height: $button_height_base;
   z-index: 2000;
   cursor: n-resize;
   border-radius: $border-radius;
+  text-align: left;
+  padding: 0 $s-tiny;
 
   transition:
     // height cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s,
@@ -46,6 +48,14 @@ $button_height_base: 44px;
   font: 400 20px / 1.65 $ff-primary;
   @media #{$bp-hand} { font: 400 20px / 1.65 $ff-primary; }
   @media #{$bp-desk} { font: 400 18px / 1.55 $ff-primary; }
+
+  svg {
+    vertical-align: -6px;
+    margin-right: $s-xtiny;
+    path {
+      @include theme-var(fill, c-foreground-medium);
+    }
+  }
 }
 
 .c-overlay-modal__button--active {
@@ -55,6 +65,9 @@ $button_height_base: 44px;
 
 .c-overlay-modal__button:hover {
   @include theme-var(color, c-foreground-focal);
+  svg path {
+    @include theme-var(fill, c-foreground-focal);
+  }
   // height: $button_height_base + 4px;
   // font-weight: 500;
 }

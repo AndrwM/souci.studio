@@ -1,5 +1,7 @@
 .u-highlight-parent.u-highlight-parent--active .c-paragraph {
-  @include theme-var(color, c-foreground-transparent, true);
+  @media #{$bp-lap} {
+    @include theme-var(color, c-foreground-transparent, true);
+  }
 }
 
 .c-paragraph {

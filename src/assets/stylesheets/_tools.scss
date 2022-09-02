@@ -120,26 +120,26 @@
 //-------- Focus And Fade
 @mixin button-focus($focus-color: c-primary, $blur-color: c-primary-200) {
   box-sizing: border-box;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   outline: none;
 
   &:hover {
-    border-width: 1px;
+    border-width: 2px;
     @include theme-var(border-color, c-primary-200);
   }
 
   &:focus {
-    border-width: 1px;
+    border-width: 2px;
     @include theme-var(border-color, $blur-color);
   }
 
   &:focus-visible {
-    border-width: 3px;
+    border-width: 2px;
     @include theme-var(border-color, $focus-color);
   }
 
   &:active {
-    border-width: 3px;
+    border-width: 2px;
     @include theme-var(border-color, $focus-color);
   }
 }
