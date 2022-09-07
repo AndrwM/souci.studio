@@ -30,6 +30,7 @@ $s-xlarge: 72px;
 
 //----------------- Theme Colors
 $colors-light: (
+  background-blend-mode: luminosity,
   c-background-primary-animation-alternate: #fdebd1,
   c-background-primary: #e1fdd1,
   c-background-primary-transparent: rgba(#e1fdd1, 0.9),
@@ -51,6 +52,7 @@ $colors-light: (
 );
 
 $colors-dark: (
+  background-blend-mode: color-burn,
   c-background-primary: #232934,
   c-background-primary-transparent: rgba(#2b323f, 0.2),
   // c-background-primary: #2e2e3e,

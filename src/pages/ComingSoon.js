@@ -2,7 +2,7 @@ import Text from "../components/Text";
 import VisualTearElement from "../components/VisualTearElement";
 
 const Intro = () => (<>
-  <div className="c-wrapper u-margin-bottom-large">
+  <div className="c-wrapper c-wrapper--noise u-margin-bottom-large">
     <Text type="paragraph" modifier="sans-medium" className="u-margin-none">
       Andrew McIntee <span className="u-subtler" style={{whiteSpace: 'nowrap', marginLeft: 5}}>( mac∙ent∙tee )</span>
     </Text>
