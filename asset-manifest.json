@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b6e7f3de.css",
-    "main.js": "/static/js/main.c1850edc.js",
+    "main.css": "/static/css/main.8376c2de.css",
+    "main.js": "/static/js/main.5736c65b.js",
     "static/js/787.b8c5da46.chunk.js": "/static/js/787.b8c5da46.chunk.js",
     "static/media/Graphik-Bold-Web.woff": "/static/media/Graphik-Bold-Web.0b5648b32b51011fb31d.woff",
     "static/media/Graphik-Semibold-Web.woff": "/static/media/Graphik-Semibold-Web.30ac36d0820baffd9445.woff",
@@ -16,12 +16,12 @@
     "static/media/Louize-DisplayMedium-Web.woff": "/static/media/Louize-DisplayMedium-Web.9967d28c1f3593fcd7a7.woff",
     "static/media/Louize-DisplayRegular-Web.woff": "/static/media/Louize-DisplayRegular-Web.11e3ae587e0f9bca0333.woff",
     "index.html": "/index.html",
-    "main.b6e7f3de.css.map": "/static/css/main.b6e7f3de.css.map",
-    "main.c1850edc.js.map": "/static/js/main.c1850edc.js.map",
+    "main.8376c2de.css.map": "/static/css/main.8376c2de.css.map",
+    "main.5736c65b.js.map": "/static/js/main.5736c65b.js.map",
     "787.b8c5da46.chunk.js.map": "/static/js/787.b8c5da46.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6e7f3de.css",
-    "static/js/main.c1850edc.js"
+    "static/css/main.8376c2de.css",
+    "static/js/main.5736c65b.js"
   ]
 }
