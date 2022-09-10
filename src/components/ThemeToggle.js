@@ -32,8 +32,8 @@ const ThemeToggle = (props) => {
   return (
     <button
       {...props}
-      onMouseOver={() => setHasHover(true)}
-      onMouseLeave={() => setHasHover(false)}
+      onPointerOver={() => setHasHover(true)}
+      onPointerLeave={() => setHasHover(false)}
       onClick={() => setDarkTheme(!darkTheme)}
       className={cssClassNames}
       children={text}

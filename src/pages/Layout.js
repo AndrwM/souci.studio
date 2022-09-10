@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom';
 import { Outlet } from 'react-router-dom';
 import OverlayModal from '../components/OverlayModal';
 import ThemeToggle from '../components/ThemeToggle';
-import HighlightModeToggle from "../components/HighlightModeToggle";
+// import HighlightModeToggle from "../components/HighlightModeToggle";
 
 const Layout = () => (<>
   {ReactDOM.createPortal(
@@ -10,9 +10,9 @@ const Layout = () => (<>
       <div className='c-overlay-hud__col-primary'>
         <OverlayModal tabIndex={1} />
       </div>
-      <div className='c-overlay-hud__col c-overlay-hud__col--hide-mobile'>
+      {/* <div className='c-overlay-hud__col c-overlay-hud__col--hide-mobile'>
         <HighlightModeToggle tabIndex={2} />
-      </div>
+      </div> */}
       <div className='c-overlay-hud__col'>
         <ThemeToggle tabIndex={1} />
       </div>

@@ -7,19 +7,20 @@ const Intro = () => (<>
       Andrew McIntee <span className="u-subtler" style={{whiteSpace: 'nowrap', marginLeft: 5}}>( mac∙ent∙tee )</span>
     </Text>
     <Text type="paragraph" modifier="xlarge">
-      Welcome to my lil’&nbsp;spot&nbsp;on&nbsp;the&nbsp;web&nbsp;<span className="c-emoji c-emoji--large u-animate-wave">👋</span>
+      Hello, welcome to&nbsp;my&nbsp;website&nbsp;<span className="c-emoji c-emoji--large u-animate-wave">👋</span>
+      {/* Welcome to my lil’&nbsp;spot&nbsp;on&nbsp;the&nbsp;web&nbsp;<span className="c-emoji c-emoji--large u-animate-wave">👋</span> */}
     </Text>
-    <Text type="title" modifier="small" className="u-margin-top">What</Text>
+    <Text type="title" modifier="small" className="u-margin-top">Professionally</Text>
     <Text type="paragraph">
-      <span className="u-highlight">I’m a software engineer & product designer</span>, pushing <span className="u-highlight">thirteen years</span> of professionally <span className="u-highlight">building web software</span>. For most of those years, I specialized on the client-side. I’m now <span className="u-highlight">focused server-side</span>, bringing my <span className="u-highlight">user experience engineering & design systems expertise</span> with me.
+      <span className="u-highlight">I’m a software engineer & product designer</span>, pushing <span className="u-highlight">thirteen years</span> of <span className="u-highlight">building web software</span>. For most of those years, I specialized on the client-side. I’m now <span className="u-highlight">focused server-side</span>, bringing my <span className="u-highlight">user experience engineering & design systems expertise</span> with me.
     </Text>
     <Text type="title" modifier="small" className="u-margin-top">For whom</Text>
     <Text type="paragraph">
       Currently, I’m a <span className="u-highlight">software engineer at</span> <a href="https://kajabi.com" rel="noopener noreferrer nofollow" target="_blank" className="c-link">Kajabi</a>. I build the learning management system and features like online course builders, media managers, website builders, video coaching, & online communities.
     </Text>
-    <Text type="title" modifier="small" className="u-margin-top">Where</Text>
+    <Text type="title" modifier="small" className="u-margin-top">Location</Text>
     <Text type="paragraph">
-      As a long-time (pre-covid) remote worker, <span className="u-highlight">I call Atlanta home</span> and, once again, I am traveling nine months out of the year with my remote-working partner and friends.
+      I'm a long-time traveling remote worker, <span className="u-highlight">based from Atlanta.</span> Now post‑pandemic, I am once again living from locations unknown with my remote-working partner and friends.
     </Text>
     <Text type="paragraph">
       Thanks for visting. <span className="u-highlight">Have a great day</span>. <span className="c-emoji">🌿</span>

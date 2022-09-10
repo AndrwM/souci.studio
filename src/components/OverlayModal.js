@@ -1,7 +1,7 @@
 import { useMemo, useEffect, useState, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
-import queryFirstFocusable from "../util/queryFirstFocusable";
+// import queryFirstFocusable from "../util/queryFirstFocusable";
 import useEscKeyListener from "../util/useEscKeyListener";
 
 import OverlayModalNavigationLink from "./OverlayModalNavigationLink";
@@ -79,6 +79,7 @@ const OverlayModal = (props) => {
         onMouseLeave={() => setHasHover(false)}
         className={buttonClassNames}
         children={buttonText}
+        tabIndex={1}
       />
       {ReactDOM.createPortal(
         <div

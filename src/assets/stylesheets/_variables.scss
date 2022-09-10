@@ -52,17 +52,16 @@ $colors-light: (
 );
 
 $colors-dark: (
-  background-blend-mode: color-burn,
-  c-background-primary: #232934,
+  c-background-primary: #001130,
   c-background-primary-transparent: rgba(#2b323f, 0.2),
   // c-background-primary: #2e2e3e,
   c-background-accent: #22292e,
   // c-background-accent: #25222e,
   c-background-accent2: #1d1d26,
-  c-background-accent2-dark: #237652,
+  c-background-accent2-dark: #2F2DBD,
 
-  c-primary: #1c5f42,
-  c-primary-200: rgba(#0f3927, 0.5),
+  c-primary: #15c9ae,
+  c-primary-200: rgba(#15c9ae, 0.5),
 
   // Neutrals
   c-foreground-xlight: #f8fdff,
