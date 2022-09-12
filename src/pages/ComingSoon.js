@@ -7,7 +7,7 @@ const Intro = () => (<>
       Andrew McIntee <span className="u-subtler" style={{whiteSpace: 'nowrap', marginLeft: 5}}>( mac∙ent∙tee )</span>
     </Text>
     <Text type="paragraph" modifier="xlarge">
-      Hello, welcome to&nbsp;my&nbsp;website&nbsp;<span className="c-emoji c-emoji--large u-animate-wave">👋</span>
+      Thanks for stopping by,<br/>welcome to&nbsp;my&nbsp;website&nbsp;<span className="c-emoji c-emoji--large u-animate-wave">👋</span>
       {/* Welcome to my lil’&nbsp;spot&nbsp;on&nbsp;the&nbsp;web&nbsp;<span className="c-emoji c-emoji--large u-animate-wave">👋</span> */}
     </Text>
     <Text type="title" modifier="small" className="u-margin-top">Professionally</Text>
@@ -22,6 +22,48 @@ const Intro = () => (<>
     <Text type="paragraph">
       I'm a long-time traveling remote worker, <span className="u-highlight">based from Atlanta.</span> Now post‑pandemic, I am once again living from locations unknown with my remote-working partner and friends.
     </Text>
+    <table>
+      {/* <caption>A summary of the UK's most famous punk bands</caption> */}
+      <thead>
+        <tr>
+          <th scope="col">Experience</th>
+          <th scope="col">&nbsp;</th>
+          <th scope="col">&nbsp;</th>
+          <th scope="col">Years Active</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">2020</th>
+          <td>Full stack engineer</td>
+          <td>✨</td>
+          <td> JS, Ruby, & Go</td>
+        </tr>
+        <tr>
+          <th scope="row">2016</th>
+          <td>Frontend engineer</td>
+          <td>✨</td>
+          <td>emphasis on design systems</td>
+        </tr>
+        <tr>
+          <th scope="row">2015</th>
+          <td>UI Developer</td>
+          <td>✨</td>
+          <td>emphasis on design systems</td>
+        </tr>
+        <tr>
+          <th scope="row">2009</th>
+          <td>Website designer</td>
+          <td>✨</td>
+          <td>Flash development</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Full resume →</td>
+        </tr>
+      </tfoot>
+    </table>
     <Text type="paragraph">
       Thanks for visting. <span className="u-highlight">Have a great day</span>. <span className="c-emoji">🌿</span>
     </Text>

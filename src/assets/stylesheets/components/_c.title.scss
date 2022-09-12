@@ -1,4 +1,5 @@
-.c-title {
+.c-title,
+%c-title {
   margin: 0 0 $s-tiny;
   word-wrap: break-word;
 
@@ -6,95 +7,100 @@
     display: none;
     @media #{$bp-desk} { display: inline; }
   }
+}
+
+.c-title__subtle {
+  font-size: 65%;
+  font-weight: 400;
+  margin: 0 8px;
+  opacity: 0.5;
+  vertical-align: baseline;
+}
+
+.c-title__em {
+  font-style: italic;
+}
+
+.c-title--xlarge,
+%c-title--xlarge {
+  font: 400 40px / 1.2 $ff-primary;
+  // color: #6a5ef5;
+  // color: #508897;
+
+  @media #{$bp-lap} {
+    font: 300 76px / 1.2 $ff-display;
+  }
 
   .c-title__subtle {
-    font-size: 65%;
-    font-weight: 400;
-    margin: 0 8px;
-    opacity: 0.5;
-    vertical-align: baseline;
+    font-size: 28px;
+  }
+}
+
+.c-title--large,
+%c-title--large {
+  font: 400 22px / 1.4 $ff-primary;
+  margin: 0 0 $s-tiny;
+  color: #6a5ef5;
+  // color: #508897;
+
+  @media #{$bp-lap} {
+    font: 400 38px / 1.4 $ff-primary;
+    .c-title__subtle { font-size: 50%; }
+  }
+}
+
+.c-title--medium,
+%c-title--medium {
+  @include theme-var(color, c-foreground-focal);
+  font: 400 24px / 1.4 $ff-display;
+  margin: 0 0 $s-small;
+
+  @media #{$bp-lap} {
+    font: 400 28px / 1.4 $ff-display;
   }
 
-  .c-title__em {
-    font-style: italic;
+  @media #{$bp-desk} {
+    font: 400 30px / 1.4 $ff-display;
   }
+}
 
-  &--xlarge {
-    font: 400 40px / 1.2 $ff-primary;
-    // color: #6a5ef5;
-    // color: #508897;
+.c-title--small,
+%c-title--small {
+  @include theme-var(color, c-foreground-focal);
+  font: 500 17px / 1.4 $ff-primary;
+  letter-spacing: 0;
+}
 
-    @media #{$bp-lap} {
-      font: 300 76px / 1.2 $ff-display;
-    }
+.c-title--smallest,
+%c-title--smallest {
+  font: 500 13px / 1.5 $ff-primary;
+  letter-spacing: 0;
+  opacity: 0.9;
 
-    .c-title__subtle {
-      font-size: 28px;
-    }
+  @media #{$bp-lap} {
+    font: 500 13px / 2 $ff-primary;
   }
+}
 
-  &--large {
-    font: 400 22px / 1.4 $ff-primary;
-    margin: 0 0 $s-tiny;
-    color: #6a5ef5;
-    // color: #508897;
+.c-title--label,
+%c-title--label {
+  display: block;
+  font: 400 10px / 1.2 $ff-primary;
+  letter-spacing: 1px;
+  opacity: .7;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 
-    @media #{$bp-lap} {
-      font: 400 38px / 1.4 $ff-primary;
-      .c-title__subtle { font-size: 50%; }
-    }
+.c-title---flush {
+  margin: 0;
+  padding: 0;
+}
 
-  }
+.c-title---on-dark {
+  color: white;
+}
 
-  &--medium {
-    @include theme-var(color, c-foreground-focal);
-    font: 400 24px / 1.4 $ff-display;
-    margin: 0 0 $s-small;
-
-    @media #{$bp-lap} {
-      font: 400 28px / 1.4 $ff-display;
-    }
-
-    @media #{$bp-desk} {
-      font: 400 30px / 1.4 $ff-display;
-    }
-  }
-
-  &--small {
-    @include theme-var(color, c-foreground-focal);
-    font: 500 17px / 1.4 $ff-primary;
-    letter-spacing: 0;
-  }
-
-  &--smallest {
-    font: 500 13px / 1.5 $ff-primary;
-    letter-spacing: 0;
-    opacity: 0.9;
-
-    @media #{$bp-lap} {
-      font: 500 13px / 2 $ff-primary;
-    }
-  }
-
-  &--label {
-    display: block;
-    font: 400 10px / 1.2 $ff-primary;
-    letter-spacing: 1px;
-    opacity: .7;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
-
-  &--flush {
-    margin: 0;
-    padding: 0;
-  }
-
-  &--on-dark {
-    color: white;
-  }
-
-  &--center {
-    text-align: center;
-  }
+.c-title---center {
+  text-align: center;
 }

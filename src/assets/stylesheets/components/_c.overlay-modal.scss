@@ -50,7 +50,7 @@ $button_height_base: 54px;
   @media #{$bp-desk} { font: 400 18px / 1.55 $ff-primary; }
 
   svg {
-    vertical-align: -6px;
+    vertical-align: -5px;
     margin-right: $s-xtiny;
     path {
       @include theme-var(fill, c-foreground-medium);

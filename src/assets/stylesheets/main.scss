@@ -108,3 +108,24 @@ img {
 @import "utilities/u.reveal";
 @import "utilities/u.border";
 @import "utilities/u.hide";
+
+
+
+table {
+  width: 100%;
+
+  @media #{$bp-desk} { width: 70vw }
+}
+
+th {
+  text-align: left;
+  @extend %c-title;
+  @extend %c-title--small;
+}
+
+td, th {
+  padding: 1vh 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  @include theme-var(border-bottom-color, c-foreground-transparent);
+}
