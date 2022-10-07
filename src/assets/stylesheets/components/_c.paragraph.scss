@@ -94,14 +94,14 @@
   }
 
   &--xlarge {
-    font: 400 36px / 1.25 $ff-display;
+    font: 500 36px / 1.25 $ff-display;
     max-width: none;
     margin: 0 0 52px;
 
     @include theme-var(color, c-foreground-focal);
 
-    @media #{$bp-hand} { font: 400 44px / 1.25 $ff-display; }
-    @media #{$bp-lap} { font: 400 60px / 1.25 $ff-display; }
+    @media #{$bp-hand} { font: 500 44px / 1.25 $ff-display; }
+    @media #{$bp-lap} { font: 500 60px / 1.25 $ff-display; }
   }
 
   &--on-dark {

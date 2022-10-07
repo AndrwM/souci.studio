@@ -109,12 +109,14 @@ img {
 @import "utilities/u.border";
 @import "utilities/u.hide";
 
-
-
 table {
   width: 100%;
+  border-collapse: collapse;
+}
 
-  @media #{$bp-desk} { width: 70vw }
+thead {
+  display: none;
+  @media #{$bp-lap} { display: table-header-group; }
 }
 
 th {
@@ -124,8 +126,15 @@ th {
 }
 
 td, th {
-  padding: 1vh 0;
+  padding: 1vh $s-small 1vh 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   @include theme-var(border-bottom-color, c-foreground-transparent);
+
+  display: block;
+  @media #{$bp-lap} { display: table-cell; }
+
+  &.no-wrap {
+    @media #{$bp-lap} { white-space: nowrap; }
+  }
 }
