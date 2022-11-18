@@ -2,7 +2,7 @@ import Text from "../components/Text";
 import VisualTearElement from "../components/VisualTearElement";
 
 const Intro = () => (<>
-  <div className="c-wrapper c-wrapper--noise">
+  <div className="c-wrapper c-wrapper--accent">
     <Text type="title" modifier="medium" className="u-margin-bottom-xtiny">
       Andrew McIntee <span className="u-subtler" style={{whiteSpace: 'nowrap', marginLeft: 5}}>( mac∙ent∙tee )</span>
     </Text>
@@ -53,34 +53,40 @@ const Intro = () => (<>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">2021</th>
-          <td><span className="c-emoji">🧘</span></td>
-          <td className="no-wrap">Software engineering</td>
+          <th scope="row">2020</th>
+          <td><span className="c-emoji">🛠</span></td>
+          <td className="no-wrap">Software engineer</td>
           <td>Working within a Rails monolith of over 700 models in Ruby, Javascript, and Go</td>
         </tr>
         <tr>
           <th scope="row">2016</th>
           <td><span className="c-emoji">🔩</span></td>
-          <td className="no-wrap">Design systems engineering</td>
+          <td className="no-wrap">Design systems engineer (Sr.)</td>
           <td>Defining and nurturing the first design system, delivered through a collection of frontend packages and ruby gem</td>
         </tr>
         <tr>
-          <th scope="row">2012</th>
+          <th scope="row">2014</th>
           <td><span className="c-emoji">🎛</span></td>
-          <td className="no-wrap">User interface design &amp; engineering</td>
+          <td className="no-wrap">Frontend engineer</td>
+          <td>Frontend subject matter expert ith emphasis on UI engineering and design systems for web software</td>
+        </tr>
+        <tr>
+          <th scope="row">2012</th>
+          <td><span className="c-emoji">🍒</span></td>
+          <td className="no-wrap">User interface designer</td>
           <td>Frontend subject matter expert ith emphasis on UI engineering and design systems for web software</td>
         </tr>
         <tr>
           <th scope="row">2009</th>
           <td><span className="c-emoji">🛀</span></td>
-          <td className="no-wrap">Advertising design &amp; web development</td>
+          <td className="no-wrap">Web developer &amp; Designer in Advertising</td>
           <td>Advertising</td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
           <td colspan="4">
-            <a href="https://2019.andrew.mn/#/case-studies" rel="noopener noreferrer nofollow" target="_blank" className="c-link">Case studies (2019) →</a>
+            <a href="https://2019.andrew.mn/#/case-studies" rel="noopener noreferrer nofollow" target="_blank" className="c-link">Case studies (2019 archive) ➚</a>
           </td>
         </tr>
       </tfoot>
