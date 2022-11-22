@@ -108,6 +108,7 @@ img {
 @import "utilities/u.reveal";
 @import "utilities/u.border";
 @import "utilities/u.hide";
+@import "utilities/u.small-caps";
 
 table {
   width: 100%;
@@ -117,6 +118,15 @@ table {
 thead {
   display: none;
   @media #{$bp-lap} { display: table-header-group; }
+}
+
+tfoot {
+  @include theme-var(background-color, c-background-primary-transparent);
+
+  td, th {
+    border-bottom-width: 0;
+    padding: 2vh $s-small 2vh 0;
+  }
 }
 
 th {

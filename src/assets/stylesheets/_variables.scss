@@ -33,7 +33,7 @@ $colors-light: (
   background-blend-mode: luminosity,
   c-background-primary-animation-alternate: #fdebd1,
   c-background-primary: #e1fdd1,
-  c-background-primary-transparent: rgba(#e1fdd1, 0.9),
+  c-background-primary-transparent: rgba(#fcfdd1, 0.9),
   c-background-accent: #fff9f0,
   c-background-accent2: #f3f0ff,
   c-background-accent2-dark: #d3e9fc,
@@ -52,8 +52,8 @@ $colors-light: (
 );
 
 $colors-dark: (
-  c-background-primary: #001130,
-  c-background-primary-transparent: rgba(#2b323f, 0.2),
+  c-background-primary: #181a28,
+  c-background-primary-transparent: rgba(#32293e, 0.2),
   // c-background-primary: #2e2e3e,
   c-background-accent: #22292e,
   // c-background-accent: #25222e,

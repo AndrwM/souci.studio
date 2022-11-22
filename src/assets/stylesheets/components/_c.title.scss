@@ -54,6 +54,7 @@
   @include theme-var(color, c-foreground-focal);
   font: 400 24px / 1.4 $ff-display;
   margin: 0 0 $s-small;
+  max-width: 400px;
 
   @media #{$bp-lap} {
     font: 400 28px / 1.4 $ff-display;
