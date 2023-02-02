@@ -20,13 +20,13 @@ const Intro = () => (<>
       For ten years I specialized on the client&#8209;side. I designed and built software user interfaces for organizations: from scrappy startups, to large SAAS softwares, to household names like BMW, Outdoor&nbsp;Channel, and Home&nbsp;Depot.
     </Text>
     <Text type="paragraph">
-      I’m now <span className="u-highlight">focused server&#8209;side</span>&ndash;building, maintaining, and measuring features for multi&#8209;billion GMV software products with Ruby, Javascript, and Go.
+      In the past three years, I’ve <span className="u-highlight">focused server&#8209;side</span>. I currently plan, build, and measure features for a multi&#8209;billion GMV software product using Ruby, Javascript, Go, and a lot of love.
     </Text>
-    <Text type="title" modifier="small" className="u-margin-top">For whom</Text>
+    <Text type="title" modifier="small" className="u-margin-top">For who?</Text>
     <Text type="paragraph">
       Currently, I’m a <span className="u-highlight">software engineer at</span> <a href="https://kajabi.com" rel="noopener noreferrer nofollow" target="_blank" className="c-link">Kajabi</a>. I build the learning management system and features like online course builders, media managers, website builders, video coaching, & online communities.
     </Text>
-    <Text type="title" modifier="small" className="u-margin-top">Location</Text>
+    <Text type="title" modifier="small" className="u-margin-top">Working from&hellip;</Text>
     <Text type="paragraph">
       I'm a long-time traveling remote worker, <span className="u-highlight">from the southeast US.</span> I call Atlanta home. Now post‑pandemic, I am once again living from locations unknown with my remote-working partner and friends.
     </Text>
@@ -47,7 +47,6 @@ const Intro = () => (<>
       I’m most at home in design-lead, cross&#8209;functional software engineering teams.
     </Text>
     <Text type="paragraph">
-      Thanks for taking the time to visit.<br/>
       I’m online at <u>studio ~at~ andrew.mn</u>.
     </Text>
     <HtmlReveal tag="table" className="u-margin-bottom">
@@ -101,16 +100,20 @@ const Intro = () => (<>
         <tr>
           {/* <td></td> */}
           <td>
-            <span className="c-emoji c-emoji--small">🔗</span><a href="https://www.linkedin.com/in/andrewmcintee/" rel="noopener noreferrer nofollow" target="_blank" className="c-link">LinkedIn</a>
+            <span className="c-paragraph c-paragraph--sans-large">
+              <span className="c-emoji c-emoji--small">🔗</span><a href="https://www.linkedin.com/in/andrewmcintee/" rel="noopener noreferrer nofollow" target="_blank" className="c-link">LinkedIn</a>
+            </span>
           </td>
           {/* <td></td> */}
           <td>
-            <span className="c-emoji c-emoji--small">🔗</span><a href="https://2019.andrew.mn/#/case-studies" rel="noopener noreferrer nofollow" target="_blank" className="c-link">Case studies (2019 archive)</a>
+            <span className="c-paragraph c-paragraph--sans-large">
+              <span className="c-emoji c-emoji--small">🔗</span><a href="https://2019.andrew.mn/#/case-studies" rel="noopener noreferrer nofollow" target="_blank" className="c-link">Case studies (2019 archive)</a>
+            </span>
           </td>
         </tr>
       </tfoot>
     </HtmlReveal>
-    <Text type="paragraph" className="u-margin-top">
+    <Text type="paragraph" className="u-margin-top u-margin-bottom-large">
       Thanks for visting. <span className="u-highlight">Have a great day</span>. <span className="c-emoji">🌿</span>
     </Text>
   </div>

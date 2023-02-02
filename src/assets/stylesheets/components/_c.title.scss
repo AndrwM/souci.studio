@@ -68,8 +68,12 @@
 .c-title--small,
 %c-title--small {
   @include theme-var(color, c-foreground-focal);
-  font: 500 17px / 1.4 $ff-primary;
+  font: 500 20px / 1.4 $ff-primary;
   letter-spacing: 0;
+
+  @media #{$bp-desk} {
+    font: 500 17px / 1.4 $ff-primary;
+  }
 }
 
 .c-title--smallest,

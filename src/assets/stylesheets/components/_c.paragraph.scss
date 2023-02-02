@@ -5,14 +5,14 @@
 }
 
 .c-paragraph {
-  font: 400 20px / 1.65 $ff-secondary;
+  font: 400 24px / 1.65 $ff-secondary;
   margin: 0 0 25px;
   max-width: 680px;
   padding: 0;
 
   @include theme-var(color, c-foreground-light);
 
-  @media #{$bp-hand} { font: 400 22px / 1.65 $ff-secondary; }
+  @media #{$bp-hand} { font: 400 28px / 1.65 $ff-secondary; }
   @media #{$bp-lap} { font: 400 24px / 1.65 $ff-secondary; }
 
   br {
@@ -45,7 +45,7 @@
   &--sans-large {
     font-family: $ff-primary;
     color: #727779;
-    font-size: 14px;
+    font-size: 20px;
     @media #{$bp-lap} { font: 400 18px / 1.65 $ff-primary; }
   }
 
