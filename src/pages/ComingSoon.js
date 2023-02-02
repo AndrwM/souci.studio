@@ -17,7 +17,10 @@ const Intro = () => (<>
     </Text>
     <Text type="title" modifier="small" className="u-margin-top">Experience</Text>
     <Text type="paragraph">
-      For ten years I specialized on the client&#8209;side. I designed and built software user interfaces for many organizations: from scrappy startups, to large SAAS softwares, and even larger entities like BMW, Outdoor&nbsp;Channel, and Home&nbsp;Depot. I’m now <span className="u-highlight">focused server&#8209;side</span>&ndash;building, maintaining, and measuring features for multi&#8209;billion GMV software products with Ruby, Javascript, and Go.
+      For ten years I specialized on the client&#8209;side. I designed and built software user interfaces for organizations: from scrappy startups, to large SAAS softwares, to household names like BMW, Outdoor&nbsp;Channel, and Home&nbsp;Depot.
+    </Text>
+    <Text type="paragraph">
+      I’m now <span className="u-highlight">focused server&#8209;side</span>&ndash;building, maintaining, and measuring features for multi&#8209;billion GMV software products with Ruby, Javascript, and Go.
     </Text>
     <Text type="title" modifier="small" className="u-margin-top">For whom</Text>
     <Text type="paragraph">
@@ -25,7 +28,7 @@ const Intro = () => (<>
     </Text>
     <Text type="title" modifier="small" className="u-margin-top">Location</Text>
     <Text type="paragraph">
-      I'm a long-time traveling remote worker, <span className="u-highlight">from the southeast US.</span> Now post‑pandemic, I am once again living from locations unknown with my remote-working partner and friends. I call Atlanta home.
+      I'm a long-time traveling remote worker, <span className="u-highlight">from the southeast US.</span> I call Atlanta home. Now post‑pandemic, I am once again living from locations unknown with my remote-working partner and friends.
     </Text>
     <VisualTearElement
       styleIndex={0}
@@ -40,8 +43,8 @@ const Intro = () => (<>
   <div className="c-wrapper u-padding-top-large">
     <Text type="title" modifier="medium" className="u-margin-top">Thanks for stopping by&hellip;</Text>
     <Text type="paragraph">
-      I identify as a software engineer and product designer switch&#8209;hitter.
-      I’m most at home in cross&#8209;functional engineering teams, where each members wear multiple hats.
+      As a software engineer and product designer switch&#8209;hitter,
+      I’m most at home in design-lead, cross&#8209;functional software engineering teams.
     </Text>
     <Text type="paragraph">
       Thanks for taking the time to visit.<br/>
