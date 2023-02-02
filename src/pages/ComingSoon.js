@@ -38,14 +38,17 @@ const Intro = () => (<>
     />
   </div>
   <div className="c-wrapper u-padding-top-large">
-    <Text type="title" modifier="medium" className="u-margin-top">A brief history&hellip;</Text>
+    <Text type="title" modifier="medium" className="u-margin-top">Thanks for stopping by&hellip;</Text>
     <Text type="paragraph">
       I identify as a software engineer and product designer switch&#8209;hitter.
-      Throughout my career, I have continued to move further down the techstack.
-      I'm most at home in cross&#8209;functional engineering teams, where each member wears multiple hats.
+      I’m most at home in cross&#8209;functional engineering teams, where each members wear multiple hats.
+    </Text>
+    <Text type="paragraph">
+      Thanks for taking the time to visit.<br/>
+      I’m online at <u>studio ~at~ andrew.mn</u>.
     </Text>
     <HtmlReveal tag="table" className="u-margin-bottom">
-      <thead>
+      {/* <thead>
         <tr>
           <th scope="col">Since</th>
           <th scope="col">&nbsp;</th>
@@ -90,17 +93,16 @@ const Intro = () => (<>
           <td />
           <td>Advertising</td>
         </tr>
-      </tbody>
+      </tbody> */}
       <tfoot>
         <tr>
-          <th scope="row"></th>
-          <td><span className="c-emoji c-emoji--small">🔗</span></td>
+          {/* <td></td> */}
           <td>
-            <a href="https://2019.andrew.mn/#/case-studies" rel="noopener noreferrer nofollow" target="_blank" className="c-link">LinkedIn</a>
+            <span className="c-emoji c-emoji--small">🔗</span><a href="https://www.linkedin.com/in/andrewmcintee/" rel="noopener noreferrer nofollow" target="_blank" className="c-link">LinkedIn</a>
           </td>
-          <td><span className="c-emoji c-emoji--small">🔗</span></td>
+          {/* <td></td> */}
           <td>
-            <a href="https://2019.andrew.mn/#/case-studies" rel="noopener noreferrer nofollow" target="_blank" className="c-link">Case studies (2019 archive)</a>
+            <span className="c-emoji c-emoji--small">🔗</span><a href="https://2019.andrew.mn/#/case-studies" rel="noopener noreferrer nofollow" target="_blank" className="c-link">Case studies (2019 archive)</a>
           </td>
         </tr>
       </tfoot>

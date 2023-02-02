@@ -51,6 +51,10 @@ img {
   width: 100%;
 }
 
+u {
+  white-space: nowrap;
+}
+
 ::selection {
   @include theme-var(background, c-foreground-medium);
   @include theme-var(color, c-background-primary);
