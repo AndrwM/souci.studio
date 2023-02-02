@@ -41,7 +41,7 @@ const Intro = () => (<>
     />
   </div>
   <div className="c-wrapper u-padding-top-large">
-    <Text type="title" modifier="medium" className="u-margin-top">Thanks for stopping by&hellip;</Text>
+    <Text type="title" modifier="medium" className="u-margin-top">Open to opportunities</Text>
     <Text type="paragraph">
       As a software engineer and product designer switch&#8209;hitter,
       I’m most at home in design-lead, cross&#8209;functional software engineering teams.
