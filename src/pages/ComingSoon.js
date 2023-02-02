@@ -107,7 +107,7 @@ const Intro = () => (<>
           {/* <td></td> */}
           <td>
             <span className="c-paragraph c-paragraph--sans-large">
-              <span className="c-emoji c-emoji--small">🔗</span><a href="https://2019.andrew.mn/#/case-studies" rel="noopener noreferrer nofollow" target="_blank" className="c-link">Case studies (2019 archive)</a>
+              <span className="c-emoji c-emoji--small">🔗</span><a href="https://2019.andrew.mn/#/case-studies" rel="noopener noreferrer nofollow" target="_blank" className="c-link">Case studies (2019)</a>
             </span>
           </td>
         </tr>
