@@ -101,20 +101,20 @@ const Intro = () => (<>
           {/* <td></td> */}
           <td>
             <span className="c-paragraph c-paragraph--sans-large">
-              <span className="c-emoji c-emoji--small">🔗</span><a href="https://www.linkedin.com/in/andrewmcintee/" rel="noopener noreferrer nofollow" target="_blank" className="c-link">LinkedIn</a>
+              <span className="c-emoji c-emoji--small">🔗</span><a href="https://www.linkedin.com/in/andrewmcintee/" rel="noopener noreferrer nofollow" target="_blank" className="c-link c-link--arrow-remote">LinkedIn</a>
             </span>
           </td>
           {/* <td></td> */}
           <td>
             <span className="c-paragraph c-paragraph--sans-large">
-              <span className="c-emoji c-emoji--small">🔗</span><a href="https://2019.andrew.mn/#/case-studies" rel="noopener noreferrer nofollow" target="_blank" className="c-link">Case studies (2019)</a>
+              <span className="c-emoji c-emoji--small">🔗</span><a href="https://2019.andrew.mn/#/case-studies" rel="noopener noreferrer nofollow" target="_blank" className="c-link c-link--arrow-remote">Case studies (2019)</a>
             </span>
           </td>
         </tr>
       </tfoot>
     </HtmlReveal>
     <Text type="paragraph" className="u-margin-top u-margin-bottom-large">
-      Thanks for visting. <span className="u-highlight">Have a great day</span>. <span className="c-emoji">🌿</span>
+      Thanks for visiting. <span className="u-highlight">Have a great day</span>. <span className="c-emoji">🌿</span>
     </Text>
   </div>
 </>);

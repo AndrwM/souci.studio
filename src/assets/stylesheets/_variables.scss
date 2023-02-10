@@ -2,12 +2,15 @@
 $w-hand: "501px";
 $w-lap: "901px";
 $w-desk: "1101px";
+$w-wide: "1551px";
 
 $bp-touch: "(hover: none) and (pointer: coarse)";
 $bp-hand: "(min-width: #{$w-hand})";
 $bp-lap: "(min-width: #{$w-lap})";
 $bp-lap-to-desk: "(min-width: #{$w-lap}) and (max-width: #{$w-desk})";
 $bp-desk: "(min-width: #{$w-desk})";
+$bp-desk-to-wide: "(min-width: #{$w-desk}) and (max-width: #{$w-wide})";
+$bp-wide: "(min-width: #{$w-wide})";
 
 $border-radius: 7px;
 $font-size: 20px;

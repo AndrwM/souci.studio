@@ -20,6 +20,7 @@
   ;
 
   @media #{$bp-lap} { padding: 20vh 20vw; }
+  @media #{$bp-wide} { padding: 20vh 32vw; }
 }
 
 .c-overlay-modal--active {

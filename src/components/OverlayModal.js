@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import classnames from 'classnames';
 // import queryFirstFocusable from "../util/queryFirstFocusable";
 import useEscKeyListener from "../util/useEscKeyListener";
+import { createCopyToClipboardHandler } from '../util/copyToClipboard';
 
 import OverlayModalNavigationLink from "./OverlayModalNavigationLink";
 
@@ -103,12 +104,12 @@ const OverlayModal = (props) => {
               <a href="https://github.com/AndrwM" tabIndex={linkTabIndex} className="c-link c-link--arrow-remote" target="_blank">Github</a>
             </li>
             <li className="c-list__item c-list__item--history">
-              <a href="https://2019.andrew.mn" tabIndex={linkTabIndex} className="c-link c-link--arrow-remote" target="_blank">2019 Archival Website</a>
+              <a href="https://2019.andrew.mn" tabIndex={linkTabIndex} className="c-link c-link--arrow-remote" target="_blank">2019.andrew.mn</a>
             </li>
           </ul>
           <p className="c-paragraph c-paragraph--sans-medium u-padding-top-small u-border-top">
             Thanks for taking the time to learn about me.&nbsp;<br />
-            Contact me at <a href="mailto:studio@Andrew.mn" className="c-link" tabIndex={linkTabIndex}>Studio@Andrew.mn</a> if you feel inclined.&nbsp;💌
+            Contact me at <a onClick={createCopyToClipboardHandler('mailto:studio@Andrew.mn')} className="c-link" tabIndex={linkTabIndex}>Studio@Andrew.mn</a> if you feel inclined.&nbsp;💌
           </p>
           <p className="c-paragraph c-paragraph--sans-smallest u-subtler">
             Your privacy is important; this site is GDPR compliant.&nbsp;<br />
