@@ -152,3 +152,53 @@ td, th {
     @media #{$bp-lap} { white-space: nowrap; }
   }
 }
+
+// ../assets/images/avatar-2023-1.jpg
+.avatar {
+  position: relative;
+
+  .avatar__element {
+    @include theme-var(background-color, c-background-primary);
+
+    background-size: cover;
+    background-position: center;
+    border-radius: $border-radius;
+    background-image: url("../images/avatar-2023-1.jpg");
+    z-index: $z-2;
+
+    border-radius: $border-radius;
+    margin: 0 0 $s-large 0;
+
+    width: 100%;
+    height: 400px;
+
+
+    @media #{$bp-hand} {
+      position: fixed;
+      top: 0;
+      right: 0;
+
+      border-radius: unset;
+      margin: 0;
+
+      height: 120px;
+      width: 120px;
+    }
+
+    @media #{$bp-desk} {
+      position: absolute;
+      top: calc(-40px - 230px);
+      right: -1vw;
+
+      border-radius: $border-radius;
+
+      height: 230px;
+      width: 230px;
+    }
+
+    @media #{$bp-wide} {
+      left: calc(-230px - 40px);
+      right: unset;
+    }
+  }
+}
