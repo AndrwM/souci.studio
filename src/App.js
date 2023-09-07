@@ -7,16 +7,19 @@ import {
 import "./assets/stylesheets/main.scss";
 
 import Layout from "./pages/Layout";
-import ComingSoon from "./pages/ComingSoon";
+import Home from "./pages/Home";
+// import Intro from "./pages/Intro";
+// import Colophon from "./pages/Colophon";
+// import Wayback from "./pages/Wayback";
 
 const App = () => (
   <HashRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<ComingSoon />} />
-        {/* <Route index element={<Intro />} /> */}
-        {/* <Route path="/colophon" element={<Colophon />} /> */}
-        {/* <Route path="/wayback-machine" element={<Wayback />} /> */}
+        <Route index element={<Home />} />
+        {/* <Route index element={<Intro />} />
+        <Route path="/colophon" element={<Colophon />} />
+        <Route path="/wayback-machine" element={<Wayback />} /> */}
       </Route>
     </Routes>
   </HashRouter>

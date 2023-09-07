@@ -2,7 +2,7 @@ import Text from "../components/Text";
 import HtmlReveal from "../components/HtmlReveal";
 import VisualTearElement from "../components/VisualTearElement";
 
-const Intro = () => (<>
+const Home = () => (<>
   <div className="c-wrapper c-wrapper--accent u-padding-bottom-xlarge">
     <Text type="title" modifier="medium" className="u-margin-bottom-xtiny">
       Andrew McIntee <span className="u-subtler" style={{whiteSpace: 'nowrap', marginLeft: 5}}>( mac∙ent∙tee )</span>
@@ -11,7 +11,7 @@ const Intro = () => (<>
       Thanks for stopping by, <br/>welcome&nbsp;to&nbsp;my&nbsp;website&nbsp;<span className="c-emoji c-emoji--large u-animate-wave">👋</span>
       {/* Welcome to my lil’&nbsp;spot&nbsp;on&nbsp;the&nbsp;web&nbsp;<span className="c-emoji c-emoji--large u-animate-wave">👋</span> */}
     </Text>
-    <div class="avatar"><div class="avatar__element" /></div>
+    <div class="c-avatar"><div class="c-avatar__element" /></div>
     <Text type="title" modifier="small" className="u-margin-top">Professionally</Text>
     <Text type="paragraph">
       <span className="u-highlight">I’m a software engineer and product designer</span>, pushing <span className="u-highlight">thirteen years</span> of <span className="u-highlight">building web software</span>.
@@ -121,4 +121,4 @@ const Intro = () => (<>
 </>);
 
 
-export default Intro;
+export default Home;

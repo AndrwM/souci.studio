@@ -64,7 +64,7 @@ u {
   overflow-y: hidden;
 
   // Disable focus witin main app frame
-  #root { visibility: hidden; }
+  #root { user-select: none; }
 }
 
 [js-breakpoint] {
@@ -81,6 +81,7 @@ u {
 }
 
 //---------------------- Components
+@import "components/c.avatar";
 @import "components/c.browser";
 @import "components/c.button";
 @import "components/c.container";
@@ -150,55 +151,5 @@ td, th {
 
   &.no-wrap {
     @media #{$bp-lap} { white-space: nowrap; }
-  }
-}
-
-// ../assets/images/avatar-2023-1.jpg
-.avatar {
-  position: relative;
-
-  .avatar__element {
-    @include theme-var(background-color, c-background-primary);
-
-    background-size: cover;
-    background-position: center;
-    border-radius: $border-radius;
-    background-image: url("../images/avatar-2023-1.jpg");
-    z-index: $z-2;
-
-    border-radius: $border-radius;
-    margin: 0 0 $s-large 0;
-
-    width: 100%;
-    height: 400px;
-
-
-    @media #{$bp-hand} {
-      position: fixed;
-      top: 0;
-      right: 0;
-
-      border-radius: unset;
-      margin: 0;
-
-      height: 120px;
-      width: 120px;
-    }
-
-    @media #{$bp-desk} {
-      position: absolute;
-      top: calc(-40px - 230px);
-      right: -1vw;
-
-      border-radius: $border-radius;
-
-      height: 230px;
-      width: 230px;
-    }
-
-    @media #{$bp-wide} {
-      left: calc(-230px - 40px);
-      right: unset;
-    }
   }
 }
