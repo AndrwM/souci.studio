@@ -14,18 +14,18 @@ const Home = () => (<>
     <div class="c-avatar"><div class="c-avatar__element" /></div>
     <Text type="title" modifier="small" className="u-margin-top">Professionally</Text>
     <Text type="paragraph">
-      <span className="u-highlight">I’m a software engineer and product designer</span>, pushing <span className="u-highlight">thirteen years</span> of <span className="u-highlight">building web software</span>.
+      <span className="u-highlight">I’m a software engineer and product designer</span>, with over <span className="u-highlight">thirteen years</span> of <span className="u-highlight">building web software</span>.
     </Text>
     <Text type="title" modifier="small" className="u-margin-top">Experience</Text>
     <Text type="paragraph">
-      For ten years I specialized on the client&#8209;side. I designed and built software user interfaces for organizations: from scrappy startups, to large SAAS softwares, to household names like BMW, Outdoor&nbsp;Channel, and Home&nbsp;Depot.
+      For ten years I specialized on the client&#8209;side. I designed and built software user interfaces for organizations: from scrappy startups to large SAAS softwares. BMW, Outdoor&nbsp;Channel, and Home&nbsp;Depot are a few I can tout.
     </Text>
     <Text type="paragraph">
-      In the past three years, I’ve <span className="u-highlight">focused server&#8209;side</span>. I currently plan, build, and measure features for a multi&#8209;billion GMV software product using Ruby, Javascript, Go, and a lot of love.
+      For the last four years I’ve <span className="u-highlight">focused server&#8209;side</span>. I plan, build, and measure features for multi&#8209;billion GMV software products in Ruby, Javascript, and Go.
     </Text>
     <Text type="title" modifier="small" className="u-margin-top">For who?</Text>
     <Text type="paragraph">
-      Currently, I’m a <span className="u-highlight">software engineer at</span> <a href="https://kajabi.com" rel="noopener noreferrer nofollow" target="_blank" className="c-link">Kajabi</a>. I build the learning management system and features like online course builders, media managers, website builders, video coaching, & online communities.
+      Currently, I’m a <span className="u-highlight">software engineer at</span> <a href="https://kajabi.com" rel="noopener noreferrer nofollow" target="_blank" className="c-link">Kajabi</a>. I build the learning management system and features like online course builders, media managers, website builders, video conferencing, & online communities.
     </Text>
     <Text type="title" modifier="small" className="u-margin-top">Working from&hellip;</Text>
     <Text type="paragraph">
@@ -84,14 +84,14 @@ const Home = () => (<>
         <tr>
           <th scope="row">2012</th>
           <td><span className="c-emoji">🍒</span></td>
-          <td className="no-wrap">User interface designer</td>
+          <td className="no-wrap">UI &amp; product designer</td>
           {/* <td>Frontend subject matter expert ith emphasis on UI engineering and design systems for web software</td> */}
           {/* <td /> */}
         </tr>
         <tr>
           <th scope="row">2009</th>
           <td><span className="c-emoji">🛀</span></td>
-          <td className="no-wrap">Web developer / advertising</td>
+          <td className="no-wrap">Advertising web developer</td>
           {/* <td>Advertising</td> */}
           {/* <td /> */}
         </tr>
