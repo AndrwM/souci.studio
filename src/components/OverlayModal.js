@@ -109,11 +109,11 @@ const OverlayModal = (props) => {
           </ul>
           <p className="c-paragraph c-paragraph--sans-medium u-padding-top-small u-border-top">
             Thanks for taking the time to learn about me.&nbsp;<br />
-            Contact me at <a onClick={createCopyToClipboardHandler('mailto:studio@Andrew.mn')} className="c-link" tabIndex={linkTabIndex}>Studio@Andrew.mn</a> if you feel inclined.&nbsp;💌
+            Contact me at <a onClick={createCopyToClipboardHandler('mailto:studio@Andrew.mn')} className="c-link" tabIndex={linkTabIndex}>Studio@Andrew.mn</a> &nbsp;💌
           </p>
           <p className="c-paragraph c-paragraph--sans-smallest u-subtler">
             Your privacy is important; this site is GDPR compliant.&nbsp;<br />
-            ©&nbsp;Andrew&nbsp;McIntee '08&nbsp;–&nbsp;2022.
+            ©&nbsp;Andrew&nbsp;McIntee '08&nbsp;–&nbsp;'24.
           </p>
         </div>,
         document.body

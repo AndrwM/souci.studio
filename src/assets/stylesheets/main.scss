@@ -141,7 +141,7 @@ th {
 }
 
 td, th {
-  padding: 1vh $s-small 1vh 0;
+  padding: 1.2vh $s-small 1.2vh $s-xlarge;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   @include theme-var(border-bottom-color, c-foreground-transparent);

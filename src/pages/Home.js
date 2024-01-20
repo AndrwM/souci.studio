@@ -41,23 +41,22 @@ const Home = () => (<>
       }}
     />
   </div>
-  <div className="c-wrapper u-padding-top-large">
+  <div className="c-wrapper u-padding-top-large u-padding-bottom-none">
     <Text type="title" modifier="medium" className="u-margin-top">Open to opportunities</Text>
     <Text type="paragraph">
       As a software engineer and product designer switch&#8209;hitter,
       I’m most at home in design-lead, cross&#8209;functional software engineering teams.
     </Text>
-    <Text type="paragraph">
-      I’m online at <u>studio ~at~ andrew.mn</u>.
-    </Text>
+  </div>
+  <div className="c-wrapper c-wrapper--table-bleed u-padding-top-small u-padding-bottom-small">
     <HtmlReveal tag="table" className="u-margin-bottom">
-      {/* <thead>
+      <thead>
         <tr>
           <th scope="col">Since</th>
           <th scope="col">&nbsp;</th>
-          <th scope="col">Position</th>
-          <th scope="col"/>
-          <th scope="col">Doing&hellip;</th>
+          <th scope="col">Role</th>
+          {/* <th scope="col"/> */}
+          {/* <th scope="col"></th> */}
         </tr>
       </thead>
       <tbody>
@@ -65,55 +64,57 @@ const Home = () => (<>
           <th scope="row">2020</th>
           <td><span className="c-emoji">🛠</span></td>
           <td className="no-wrap">Software engineer</td>
-          <td />
-          <td>Working within a large Rails monolith in Ruby, Javascript, and Go</td>
+          {/* <td>Ruby, Javascript, and Go</td> */}
+          {/* <td /> */}
         </tr>
         <tr>
           <th scope="row">2016</th>
           <td><span className="c-emoji">🔩</span></td>
-          <td className="no-wrap">Design systems engineer (Sr.)</td>
-          <td />
-          <td>Defining and nurturing the first design system, delivered through a collection of frontend packages and ruby gem</td>
+          <td className="no-wrap">Design systems engineer</td>
+          {/* <td>Defining and nurturing the first design system, delivered through a collection of frontend packages and ruby gem</td> */}
+          {/* <td /> */}
         </tr>
         <tr>
           <th scope="row">2014</th>
           <td><span className="c-emoji">🎛</span></td>
           <td className="no-wrap">Frontend engineer</td>
-          <td />
-          <td>Frontend subject matter expert ith emphasis on UI engineering and design systems for web software</td>
+          {/* <td>Frontend subject matter expert ith emphasis on UI engineering and design systems for web software</td> */}
+          {/* <td /> */}
         </tr>
         <tr>
           <th scope="row">2012</th>
           <td><span className="c-emoji">🍒</span></td>
           <td className="no-wrap">User interface designer</td>
-          <td />
-          <td>Frontend subject matter expert ith emphasis on UI engineering and design systems for web software</td>
+          {/* <td>Frontend subject matter expert ith emphasis on UI engineering and design systems for web software</td> */}
+          {/* <td /> */}
         </tr>
         <tr>
           <th scope="row">2009</th>
           <td><span className="c-emoji">🛀</span></td>
-          <td className="no-wrap">Web developer &amp; Designer in Advertising</td>
-          <td />
-          <td>Advertising</td>
+          <td className="no-wrap">Web developer / advertising</td>
+          {/* <td>Advertising</td> */}
+          {/* <td /> */}
         </tr>
-      </tbody> */}
+      </tbody>
       <tfoot>
-        <tr>
+        {/* <tr> */}
           {/* <td></td> */}
-          <td>
+          {/* <td>
             <span className="c-paragraph c-paragraph--sans-large">
               <span className="c-emoji c-emoji--small">🔗</span><a href="https://www.linkedin.com/in/andrewmcintee/" rel="noopener noreferrer nofollow" target="_blank" className="c-link c-link--arrow-remote">LinkedIn</a>
             </span>
-          </td>
+          </td> */}
           {/* <td></td> */}
           {/* <td>
             <span className="c-paragraph c-paragraph--sans-large">
               <span className="c-emoji c-emoji--small">🔗</span><a href="https://2019.andrew.mn/#/case-studies" rel="noopener noreferrer nofollow" target="_blank" className="c-link c-link--arrow-remote">Case studies (2019)</a>
             </span>
           </td> */}
-        </tr>
+        {/* </tr> */}
       </tfoot>
     </HtmlReveal>
+  </div>
+  <div className="c-wrapper u-padding-top-none">
     <Text type="paragraph" className="u-margin-top u-margin-bottom-large">
       Thanks for visiting. <span className="u-highlight">Have a great day</span>. <span className="c-emoji">🌿</span>
     </Text>

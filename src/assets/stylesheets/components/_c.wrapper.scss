@@ -29,6 +29,15 @@
     }
   }
 
+  &--table-bleed {
+    overflow-x: hidden;
+    overflow-y: visible;
+
+    @media #{$bp-lap} { padding-left: calc(6vw - $s-xlarge); padding-right: calc(6vw - $s-xlarge); }
+    @media #{$bp-desk} { padding-left: calc(8vw - $s-xlarge); padding-right: calc(8vw - $s-xlarge); }
+    @media #{$bp-wide} { padding-left: calc(30vw - $s-xlarge); padding-right: calc(30vw - $s-xlarge); }
+  }
+
   &--slim {
     padding-bottom: 50px;
     padding-top: 50px;

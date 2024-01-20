@@ -12,7 +12,7 @@ $bp-desk: "(min-width: #{$w-desk})";
 $bp-desk-to-wide: "(min-width: #{$w-desk}) and (max-width: #{$w-wide})";
 $bp-wide: "(min-width: #{$w-wide})";
 
-$border-radius: 9px;
+$border-radius: 10px;
 $font-size: 20px;
 $page-max-width: 1400px;
 
@@ -61,7 +61,7 @@ $colors-dark: (
   c-background-accent: #1d1b1b,
   // c-background-accent: #25222e,
   c-background-accent2: #14191f,
-  c-background-accent2-dark: #2F2DBD,
+  c-background-accent2-dark: #2b2335,
 
   c-primary: #15c9ae,
   c-primary-200: rgba(#15c9ae, 0.5),
@@ -71,7 +71,7 @@ $colors-dark: (
   c-foreground-light: #ffe5d3,
   c-foreground-medium: #f3d8b7,
   c-foreground-focal: #f8fdff,
-  c-foreground-transparent: rgba(#cab5e3, 0.3),
+  c-foreground-transparent: rgba(#cab5e3, 0.07),
 
   c-system: #171717,
   c-border: #413131,
