@@ -8,7 +8,7 @@ const Home = () => (<>
       Andrew McIntee <span className="u-subtler" style={{whiteSpace: 'nowrap', marginLeft: 5}}>( mac∙ent∙tee )</span>
     </Text>
     <Text type="paragraph" modifier="xlarge">
-      Thanks for stopping by, <br/>welcome&nbsp;to&nbsp;my&nbsp;website&nbsp;<span className="c-emoji c-emoji--large u-animate-wave">👋</span>
+      Thanks for stopping by, <br/>welcome&nbsp;to&nbsp;my&nbsp;website&nbsp;<span className="c-emoji c-emoji--large u-animate-wave u-hide--hand">👋</span>
       {/* Welcome to my lil’&nbsp;spot&nbsp;on&nbsp;the&nbsp;web&nbsp;<span className="c-emoji c-emoji--large u-animate-wave">👋</span> */}
     </Text>
     <div class="c-avatar"><div class="c-avatar__element" /></div>
@@ -62,35 +62,35 @@ const Home = () => (<>
       <tbody>
         <tr>
           <th scope="row">2020</th>
-          <td><span className="c-emoji">🛠</span></td>
+          <td class="u-hide--lap"><span className="c-emoji">🛠</span></td>
           <td className="no-wrap">Software engineer</td>
           {/* <td>Ruby, Javascript, and Go</td> */}
           {/* <td /> */}
         </tr>
         <tr>
           <th scope="row">2016</th>
-          <td><span className="c-emoji">🔩</span></td>
+          <td class="u-hide--lap"><span className="c-emoji">🔩</span></td>
           <td className="no-wrap">Design systems engineer</td>
           {/* <td>Defining and nurturing the first design system, delivered through a collection of frontend packages and ruby gem</td> */}
           {/* <td /> */}
         </tr>
         <tr>
           <th scope="row">2014</th>
-          <td><span className="c-emoji">🎛</span></td>
+          <td class="u-hide--lap"><span className="c-emoji">🎛</span></td>
           <td className="no-wrap">Frontend engineer</td>
           {/* <td>Frontend subject matter expert ith emphasis on UI engineering and design systems for web software</td> */}
           {/* <td /> */}
         </tr>
         <tr>
           <th scope="row">2012</th>
-          <td><span className="c-emoji">🍒</span></td>
+          <td class="u-hide--lap"><span className="c-emoji">🍒</span></td>
           <td className="no-wrap">UI &amp; product designer</td>
           {/* <td>Frontend subject matter expert ith emphasis on UI engineering and design systems for web software</td> */}
           {/* <td /> */}
         </tr>
         <tr>
           <th scope="row">2009</th>
-          <td><span className="c-emoji">🛀</span></td>
+          <td class="u-hide--lap"><span className="c-emoji">🛀</span></td>
           <td className="no-wrap">Advertising web developer</td>
           {/* <td>Advertising</td> */}
           {/* <td /> */}
