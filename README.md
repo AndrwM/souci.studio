@@ -1,2 +1,1 @@
-# Andrew.mn (v4)
-### _This time its personal ™_
+# _"No worries"_
