@@ -8,7 +8,7 @@ const Layout = () => (<>
   {ReactDOM.createPortal(
     <div className='c-overlay-hud'>
       <div className='c-overlay-hud__col-primary'>
-        <OverlayModal tabIndex={1} />
+        {/* <OverlayModal tabIndex={1} /> */}
       </div>
       {/* <div className='c-overlay-hud__col c-overlay-hud__col--hide-mobile'>
         <HighlightModeToggle tabIndex={2} />

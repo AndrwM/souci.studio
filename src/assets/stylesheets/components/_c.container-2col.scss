@@ -14,18 +14,15 @@
       flex: 0 1 auto;
       box-sizing: border-box;
       width: 50%;
-      max-width: ($page-max-width / 2);
       display: flex;
       flex-direction: column;
 
       &:nth-child(1) {
-        padding: 14vh 6vw 0px 0px;
+        padding: $s-tiny ($s-tiny / 2) 0px 0px;
       }
 
       &:nth-child(2) {
-        border-left: 1px dashed;
-        @include theme-var(border-color, c-border);
-        padding: 14vh 0px 0px 6vw
+        padding: $s-tiny 0px 0px ($s-tiny / 2);
       }
 
       &--stripe {
@@ -35,10 +32,3 @@
     }
   }
 }
-
-  // margin: 0;
-  // padding: 60px 6vw;
-  // position: relative;
-
-  // @media #{$bp-lap} { padding: 80px 6vw; }
-  // @media #{$bp-desk} { padding: 140px 9vw; }

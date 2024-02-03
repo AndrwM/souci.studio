@@ -24,8 +24,8 @@
     overflow-y: visible;
 
     @media #{$bp-desk} {
-      padding-left: 9%;
-      padding-right: 9%;
+      padding-left: 2vw;
+      padding-right: 2vw;
     }
   }
 
@@ -56,6 +56,7 @@
   &--white { background: #ffffff; }
   &--sepia { @include theme-var(background-color, c-background-primary); }
   &--accent { @include theme-var(background-color, c-background-accent); }
+  &--accent2 { @include theme-var(background-color, c-background-accent2); }
 
   &__video-background {
     position: absolute;

@@ -69,6 +69,12 @@
     margin: 0 0 10px;
   }
 
+  &--mono-medium {
+    @include theme-var(color, c-foreground-xlight);
+    font: 400 15px/1.65 monospace;
+    margin: 0 0 10px;
+  }
+
   &--quote {
     max-width: none;
     font: 500 18px / 1.9 $ff-secondary;

@@ -1,0 +1,46 @@
+.c-image-slide {
+  @include theme-var(background-color, c-background-accent2-dark);
+  height: 45vh;
+  position: relative;
+
+  @media #{$bp-desk} { height: 300px; }
+  @media #{$bp-wide} { height: 500px; }
+}
+
+.c-image-slide__sold-tag {
+  @include theme-var(background-color, c-background-accent2);
+  font: 400 13px/1.65 monospace;
+  position: absolute;
+  right: $s-large;
+  text-align: right;
+  top: 0;
+  padding: $s-small $s-small $s-tiny;
+}
+
+.c-image-slide__container {
+  @include theme-var(background-color, c-background-accent2);
+  position: absolute;
+  right: $s-large;
+  text-align: right;
+  bottom: $s-large;
+  padding: $s-small;
+}
+
+.c-image-slide__title {
+  @include theme-var(color, c-foreground-medium);
+  font: 400 15px/1.65 monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.c-image-slide__weight {
+  @include theme-var(color, c-foreground-xlight);
+  font: 400 11px/1.65 monospace;
+  letter-spacing: 1px;
+}
+
+.c-image-slide__location {
+  @include theme-var(color, c-foreground-medium);
+  font: 400 15px/1.65 monospace;
+  letter-spacing: 1px;
+}

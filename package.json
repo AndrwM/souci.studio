@@ -1,8 +1,8 @@
 {
-  "name": "andrew.mn",
-  "version": "4.0.0-alpha",
+  "name": "souci.studio",
+  "version": "4.0.0",
   "private": true,
-  "homepage": "https://andrew.mn/",
+  "homepage": "https://souci.studio/",
   "dependencies": {
     "classnames": "^2.3.1",
     "react": "^17.0.2",
