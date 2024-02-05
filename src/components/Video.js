@@ -4,9 +4,9 @@ const Video = ({
   src,
 }) => (
   <video
-    muted="true"
+    muted={true}
     preload="auto"
-    loop="true"
+    loop={true}
     onMouseOver={ev => ev.target.play()}
     onMouseOut={ev => ev.target.pause()}
   >

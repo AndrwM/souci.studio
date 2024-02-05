@@ -106,7 +106,6 @@ const Home = () => (<>
     <Text type="paragraph" modifier="mono-medium">
       consult@souci.studio
     </Text>
-    <div style={{ height: 200 }}></div>
   </div>
 </>);
 
