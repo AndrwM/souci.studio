@@ -7,9 +7,9 @@ import ThemeToggle from '../components/ThemeToggle';
 const Layout = () => (<>
   {ReactDOM.createPortal(
     <div className='c-overlay-hud'>
-      <div className='c-overlay-hud__col-primary'>
+      {/* <div className='c-overlay-hud__col-primary'> */}
         {/* <OverlayModal tabIndex={1} /> */}
-      </div>
+      {/* </div> */}
       {/* <div className='c-overlay-hud__col c-overlay-hud__col--hide-mobile'>
         <HighlightModeToggle tabIndex={2} />
       </div> */}

@@ -21,9 +21,9 @@ const ThemeToggle = (props) => {
     } else if (!darkTheme && hasHover) {
       return 'Darken'
     } else if (!darkTheme) {
-      return 'Light Mode'
+      return 'Light'
     } else if (darkTheme) {
-      return 'Dark Mode'
+      return 'Dark'
     } else {
       return ''; // no-op
     }

@@ -1,10 +1,10 @@
-$-border: 4px;
-$-knob-size: 14px;
-$-knob-border-size: 2px;
-$-knob-pad: 6px;
-$-toggle-width: 150px;
+$-border: 2px;
+$-knob-size: 9px;
+$-knob-border-size: 1px;
+$-knob-pad: 8px;
+$-toggle-width: 104px;
 $-radius: 100000px;
-$-height: 38px;
+$-height: 28px;
 
 .c-toggle {
   cursor: pointer;
@@ -15,7 +15,9 @@ $-height: 38px;
   width: $-toggle-width;
   padding-left: 0;
   padding-right: $-knob-size;
-  font: 400 16px / 1 $ff-primary;
+  font: 400 12px / 2 monospace;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   @include theme-var(background-color, c-background-accent);
   @include theme-var(color, c-foreground-medium);
   @include theme-var(border-color, c-background-primary);

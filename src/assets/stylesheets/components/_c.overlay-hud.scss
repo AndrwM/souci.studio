@@ -1,23 +1,27 @@
 .c-overlay-hud {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 3000;
-  display: flex;
-  align-items: center;
+  // position: fixed;
+  // bottom: 0;
+  // right: 0;
+  // left: 0;
+  // z-index: 3000;
+  // display: flex;
+  // align-items: center;
 
-  @include theme-var(background-color, c-background-accent2-dark);
+  // @include theme-var(background-color, c-background-accent2-dark);
 }
 
 .c-overlay-hud__col-primary {
-  flex: 1;
-  padding: 1vh 0 1vh 3vw;
-  @media #{$bp-lap} { padding: 1vh 0 1vh 1vw; }
-  @media #{$bp-desk} { padding: 1vh 0 1vh 0.5vw; }
+  // flex: 1;
+  // padding: 1vh 0 1vh 3vw;
+  // @media #{$bp-lap} { padding: 1vh 0 1vh 1vw; }
+  // @media #{$bp-desk} { padding: 1vh 0 1vh 0.5vw; }
 }
 
 .c-overlay-hud__col {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  // left: 0;
   padding: 0 3vw;
   padding: 1vh 2vw;
   @include theme-var(border-left-color, c-background-primary-transparent);

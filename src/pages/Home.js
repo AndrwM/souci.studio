@@ -15,7 +15,7 @@ const Home = () => (<>
       styleIndex={0}
       colorVar='--c-background-primary'
       style={{
-        height: 10,
+        height: 16,
         bottom: 0
       }}
     />
@@ -86,7 +86,7 @@ const Home = () => (<>
       styleIndex={0}
       colorVar='--c-background-accent2'
       style={{
-        height: 10,
+        height: 16,
         bottom: 0
       }}
     />
@@ -99,6 +99,7 @@ const Home = () => (<>
     <Text type="paragraph" modifier="mono-medium">
       consult@souci.studio
     </Text>
+    <div style={{ height: 200 }}></div>
   </div>
 </>);
 
