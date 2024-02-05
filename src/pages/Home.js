@@ -1,6 +1,7 @@
 import Text from "../components/Text";
-import Browser from "../components/Browser";
+import Video from "../components/Video";
 import VisualTearElement from "../components/VisualTearElement";
+import TestVideo from "../assets/images/media/trailer.webm";
 
 const Home = () => (<>
   <div className="c-wrapper c-wrapper--accent u-padding-bottom-xlarge">
@@ -24,7 +25,8 @@ const Home = () => (<>
     <div className="c-container-2col">
       <div className="c-container-2col__item">
         <div className="c-image-slide">
-            <div className="c-image-slide__container">
+          <Video className="c-image-slide" src={TestVideo} />
+          <div className="c-image-slide__container">
             <div className="c-image-slide__title">Sapphire 011</div>
             <div className="c-image-slide__weight">2.04 caret</div>
             <div className="c-image-slide__location">Australia</div>
@@ -33,6 +35,7 @@ const Home = () => (<>
       </div>
       <div className="c-container-2col__item">
         <div className="c-image-slide">
+          <Video className="c-image-slide" src={TestVideo} />
             <div className="c-image-slide__sold-tag">Sold</div>
             <div className="c-image-slide__container">
             <div className="c-image-slide__title">Sapphire 012</div>
@@ -45,6 +48,7 @@ const Home = () => (<>
     <div className="c-container-2col">
       <div className="c-container-2col__item">
         <div className="c-image-slide">
+          <Video className="c-image-slide" src={TestVideo} />
             <div className="c-image-slide__container">
             <div className="c-image-slide__title">Sapphire 013</div>
             <div className="c-image-slide__weight">2.04 caret</div>
@@ -54,6 +58,7 @@ const Home = () => (<>
       </div>
       <div className="c-container-2col__item">
         <div className="c-image-slide">
+          <Video className="c-image-slide" src={TestVideo} />
           <div className="c-image-slide__container">
             <div className="c-image-slide__title">Sapphire 021</div>
             <div className="c-image-slide__weight">2.04 caret</div>
@@ -65,6 +70,7 @@ const Home = () => (<>
     <div className="c-container-2col">
       <div className="c-container-2col__item">
         <div className="c-image-slide">
+          <Video className="c-image-slide" src={TestVideo} />
         <div className="c-image-slide__container">
             <div className="c-image-slide__title">Sapphire 022</div>
             <div className="c-image-slide__weight">2.04 caret</div>
@@ -74,6 +80,7 @@ const Home = () => (<>
       </div>
       <div className="c-container-2col__item">
         <div className="c-image-slide">
+          <Video className="c-image-slide" src={TestVideo} />
           <div className="c-image-slide__container">
             <div className="c-image-slide__title">Sapphire 023</div>
             <div className="c-image-slide__weight">2.04 caret</div>

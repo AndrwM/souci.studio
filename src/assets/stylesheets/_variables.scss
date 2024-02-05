@@ -35,7 +35,7 @@ $s-xlarge: 72px;
 $colors-light: (
   background-blend-mode: luminosity,
   c-background-primary-animation-alternate: #fdebd1,
-  c-background-primary: #a9c09c,
+  c-background-primary: #e8e2d9,
   c-background-primary-transparent: rgba(#fcfdd1, 0.9),
   c-background-accent: #fff9f0,
   c-background-accent2: #f3f0ff,
@@ -63,8 +63,8 @@ $colors-dark: (
   c-background-accent2: #070709,
   c-background-accent2-dark: #0c0c13,
 
-  c-primary: #15c9ae,
-  c-primary-200: rgba(#15c9ae, 0.5),
+  c-primary: #f5ffc7,
+  c-primary-200: rgba(#f5ffc7, 0.1),
 
   // Neutrals
   c-foreground-xlight: #676868,

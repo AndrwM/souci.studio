@@ -2,9 +2,21 @@
   @include theme-var(background-color, c-background-accent2-dark);
   height: 45vh;
   position: relative;
+  overflow: hidden;
 
   @media #{$bp-desk} { height: 300px; }
   @media #{$bp-wide} { height: 500px; }
+}
+
+.c-image-slide video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .c-image-slide__sold-tag {
@@ -15,6 +27,7 @@
   text-align: right;
   top: 0;
   padding: $s-small $s-small $s-tiny;
+  z-index: +1;
 }
 
 .c-image-slide__container {
@@ -24,6 +37,7 @@
   text-align: right;
   bottom: $s-large;
   padding: $s-small;
+  z-index: +1;
 }
 
 .c-image-slide__title {

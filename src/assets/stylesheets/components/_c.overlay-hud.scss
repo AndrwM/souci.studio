@@ -1,4 +1,5 @@
 .c-overlay-hud {
+
   // position: fixed;
   // bottom: 0;
   // right: 0;
@@ -19,6 +20,7 @@
 
 .c-overlay-hud__col {
   position: fixed;
+  z-index: 100;
   bottom: 0;
   right: 0;
   // left: 0;
