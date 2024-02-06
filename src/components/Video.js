@@ -10,7 +10,7 @@ const Video = ({
     onMouseOver={ev => ev.target.play()}
     onMouseOut={ev => ev.target.pause()}
   >
-    <source src={src} type="video/webm" />
+    <source src={src} type="video/mp4" />
     <p>Your user agent does not support the HTML5 Video element.</p>
   </video>
 );

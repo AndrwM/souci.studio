@@ -1,7 +1,7 @@
 import Text from "../components/Text";
 import Video from "../components/Video";
 import VisualTearElement from "../components/VisualTearElement";
-import TestVideo from "../assets/images/media/trailer.webm";
+import TestVideo from "../assets/images/media/test1.mp4";
 
 const Home = () => (<>
   <div className="c-wrapper c-wrapper--accent u-padding-bottom-xlarge">
