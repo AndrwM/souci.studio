@@ -20,8 +20,15 @@
   }
 
   &--full {
+    padding-right: 0vw;
+    padding-left: 0vw;
     overflow-x: hidden;
     overflow-y: visible;
+
+    @media #{$bp-lap} {
+      padding-left: 6vw;
+      padding-right: 6vw;
+    }
 
     @media #{$bp-desk} {
       padding-left: 2vw;

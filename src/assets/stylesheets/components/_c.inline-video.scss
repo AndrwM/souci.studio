@@ -1,0 +1,6 @@
+.c-inline-video {
+  &::-webkit-media-controls-panel,
+  &::media-controls-panel {
+    display: none !important;
+  }
+}

@@ -2,9 +2,23 @@ import Text from "../components/Text";
 import Video from "../components/Video";
 import VisualTearElement from "../components/VisualTearElement";
 import TestVideo from "../assets/images/media/test1.mp4";
+import TestPoster from "../assets/images/avatar-2023-1.jpg";
 
 const Home = () => (<>
   <div className="c-wrapper c-wrapper--accent u-padding-bottom-xlarge">
+    {/* <video
+      playsInline={true}
+      poster={TestPoster}
+      controls={true}
+      // muted={true}
+      // preload="auto"
+      // loop={true}
+      // onMouseOver={ev => ev.target.play()}
+      // onMouseOut={ev => ev.target.pause()}
+    >
+      <source src={TestVideo} type="video/mp4" />
+      <p>Your user agent does not support the HTML5 Video element.</p>
+    </video> */}
     <Text type="title" modifier="small" className="u-margin-top-large">Souci Studio</Text>
     <Text type="paragraph">
       We specialize in procuring the extraordinary. Our bicolor sapphires, meticulously selected from across the world, boast unparalleled elegance with their unique hues and captivating inclusions.
